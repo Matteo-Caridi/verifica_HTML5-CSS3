@@ -6,7 +6,7 @@
 - [x] **task2 Creazione main**
 - [ ] **task3 Creazione pagina Gallery**
 - [x] **task3.1 inserimento menù**
-- [ ] **task3.2 inserimento carousel**
+- [x] **task3.2 inserimento carousel**
 - [ ] **task3.3 inserimento grid per card**
 
 - [ ] **task4 Creazione pagina Biografia**

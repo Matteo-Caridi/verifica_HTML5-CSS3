@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Aggiunto css lightbox -->
+    <link href="../lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <title>Weegee - Gallery</title>
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #EDEEF1;
+        }
+
+
+        /* Scrollbar Hidden*/
+        ::-webkit-scrollbar{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Ombra testo Carousel */
+
+        .carousel-inner {
+            text-shadow: 2px 2px 4px #777,
+                -2px -2px 4px #777;
+        }
+
+        /* CAROUSEL */
+        .carousel-item {
+            height: 41.5rem;
+            background: #000;
+            color: white;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item .active {
+                height: 100%;
+                background: black;
+                color: white;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 100%;
+                background: black;
+                color: white;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        @media (max-width: 1040px) {
+            .carousel-item {
+                height: 100%;
+                background: black;
+                color: white;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        /* NAVBAR */
+
+        .container__header {
+            height: 20rem;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* LIGHTBOX */
+
+        .lightbox__img {
+            max-width: 100%;
+        }
+
+        /* COLONNE */
+
+        .col-md {
+            background-color: white;
+            border: 1px solid rgb(226, 226, 226);
+            padding: 30px;
+        }
+
+        .col-md:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.20), 0 5px 5px rgba(0, 0, 0, 0.20);
+        }
+
+        .card {
+            border: none;
+        }
+
+        /* DECORAZIONE GALLERY */
+
+        .container__header h1:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid rgb(140, 140, 140);
+            width: 3rem;
+            margin: auto;
+            padding-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../home/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../galleria/index.html" class="nav-link active">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Credits</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="../img/Gallery/carousel/foto830px.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>After the opera</h2>
+                    <p>Sammy's on the Bowery, New York</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="../img/Gallery/carousel/macchinaguanto830.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Cab driver with Macy's Thanksgiving Day Parade clown</h2>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="../img/Gallery/carousel/700occhionero.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Ethel, queen of the Bowery, and man</h2>
+                    <p>Sammy's on the Bowery, New York</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="../img/Gallery/carousel/The Critic-1943-----768.png"
+                    alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>The Critic</h2>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="../img/Gallery/carousel/unusualcrime.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Unusual Crime</h2>
+                    <p>New York</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <main class="container">
+        </div>
+        <section class="container">
+            <div class="container__header">
+                <i>
+                    <h1>Gallery</h1>
+                </i>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/bellanapoli.jpeg" data-lightbox="grid"
+                                data-title="Caffé Bella Napoli, Mulberry Street <br>July 1944">
+                                <img class="card-img-top" src="../img/Gallery/grid/bellanapoli.jpeg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/baby.jpg" data-lightbox="grid" data-title="Baby">
+                                <img class="card-img-top" src="../img/Gallery/grid/baby.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
+                                data-lightbox="grid"
+                                data-title="New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/bentower.jpg" data-lightbox="grid" data-title="Ben Tower">
+                                <img class="card-img-top" src="../img/Gallery/grid/bentower.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Children playing in water sprayed from open fire hydrant <br> Upper West Side, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
+                                data-lightbox="grid"
+                                data-title="Franklin D. Roosevelt on an open-car tour of New York City">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Afternoon crowd at Coney Island, Brooklyn.jpg"
+                                data-lightbox="grid" data-title="Afternoon crowd at Coney Island, Brooklyn">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Afternoon crowd at Coney Island, Brooklyn.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Secondo container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Simply Add Boiling Water, New York, December 18, 1943.jpg"
+                                data-lightbox="grid"
+                                data-title="Simply Add Boiling Water <br> New York, December 18, 1943">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Simply Add Boiling Water, New York, December 18, 1943.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Boy meets girl - from Mars.jpg" data-lightbox="grid"
+                                data-title="Boy meets girl - from Mars">
+                                <img class="card-img-top" src="../img/Gallery/grid/Boy meets girl - from Mars.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
+                                data-lightbox="grid"
+                                data-title="Tenement sleeping during heat spell' Lower East Side <br> New York, May 22, 1941">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
+                                data-lightbox="grid" data-title="Kids Gawk at Car-Wreck Site; Observer Unimpressed">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
+                                data-lightbox="grid"
+                                data-title="Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York, January 26, 1942">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
+                                data-lightbox="grid" data-title="‘Time Is Short’ in Broome Street, Little Italy, 1942">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
+                                data-lightbox="grid" data-title="Act of Love at the Astor Theatre, Times Square, 1954">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Terzo Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Lottery ticket, New York.jpg" data-lightbox="grid"
+                                data-title="Lottery ticket, New York">
+                                <img class="card-img-top" src="../img/Gallery/grid/Lottery ticket, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
+                                data-lightbox="grid" data-title="Boy wearing a 'Space Patrol' astronaut mask, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
+                                data-lightbox="grid"
+                                data-title="Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
+                                data-lightbox="grid"
+                                data-title="Firefighters carrying musician and her violin to safety after fire, New York, January 28, 19435">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Under the Third Avenue Elevated, 1938.jpeg"
+                                data-lightbox="grid" data-title="Under the Third Avenue Elevated, 1938">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/Under the Third Avenue Elevated, 1938.jpeg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Shooting in Front of My Studio.jpg" data-lightbox="grid"
+                                data-title="Shooting in Front of My Studio">
+                                <img class="card-img-top" src="../img/Gallery/grid/Shooting in Front of My Studio.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/Their First Murder(1941).jpg" data-lightbox="grid"
+                                data-title="Il loro primo omicidio, 1941">
+                                <img class="card-img-top" src="../img/Gallery/grid/Their First Murder(1941).jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script> -->
+
+    <!-- Aggiunto jquery per lightbox  -->
+    <script src="../lightbox/js/lightbox-plus-jquery.js"></script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 600,
+            'wrapAround': true,
+            'showImageNumberLabel': false,
+            'disableScrolling': true,
+        })
+    </script>
+
+</body>
+
+</html>

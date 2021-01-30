@@ -14,35 +14,29 @@
     <style>
         body {
             font-family: 'Playfair Display', serif;
+            font-size: 15px;
         }
 
         .col-md {
             /* border: 1px solid red; */
+            text-align: justify;
+        }
+
+        /* Scrollbar Hidden*/
+        ::-webkit-scrollbar {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header__info {
+            padding: 1rem;
         }
 
         .header__img {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .header__info {
-            padding: 1.875rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .header__info .header__info--quote {
-            padding-top: 3rem;
-        }
-
-        .header__img {
-            padding: 0;
-        }
-
-        .header__img--artist {
-            max-width: 100%;
         }
 
         .has-dropcap:first-letter {
@@ -52,21 +46,9 @@
             margin: 0.1em 0.1em 0.2em 0;
         }
 
-        .header__bio {
-            text-align: justify;
-            padding: 2rem;
+        .header__img--artist {
+            max-width: 100%;
         }
-
-        .header__bio--secondo {
-            text-align: justify;
-        }
-
-
-        /* p::first-letter {
-            font-size: 5em;
-            float: left;
-            margin-top: 7px;
-        } */
     </style>
 </head>
 
@@ -100,87 +82,60 @@
         <div class="container">
             <div class="row">
                 <div class="col-md header__img">
-                    <img src="../img/Weegee/weegee-biography.jpg" class="header__img--artist" alt="Ascher Fellig">
+                    <img src="../img/Weegee/weegee-biography.jpg" alt="Ascher Fellig" class="header__img--artist">
                 </div>
-                <article class="col-md header__bio">
+                <article class="col-md header__info">
+
                     <p class="has-dropcap">
-                        <i>W</i>eegee, nato Usher Fellig il 12 giugno 1899 nella città di Lemburg (ora in Ucraina), ha
-                        lavorato
+                        <i>W</i>eegee, nome d'arte di Usher Fellig, nacque il 12 giugno 1899 nella città di Złoczew.
+                        Lavorò
                         per la prima volta come fotografo all'età di quattordici anni, tre anni dopo che la sua famiglia
-                        è immigrata negli Stati Uniti, dove il suo nome è stato cambiato in più Arthur dal suono
-                        americano. Autodidatta, ha svolto molti altri lavori legati alla fotografia prima di ottenere un
-                        impiego regolare presso uno studio fotografico nella parte bassa di Manhattan nel 1918. Questo
-                        lavoro lo ha portato ad altri in una varietà di giornali fino a quando, nel 1935, è diventato un
-                        fotografo di notizie freelance. Ha incentrato la sua pratica intorno al quartier generale della
-                        polizia e nel 1938 ha ottenuto il permesso di installare una radio della polizia nella sua auto.
-                        Ciò gli ha permesso di scattare le prime e più sensazionali fotografie di eventi di notizie e di
+                        emigrò negli Stati Uniti, dove cambio nome in Arthur. Autodidatta, ha svolto molti altri lavori
+                        legati alla fotografia prima di ottenere un impiego regolare presso uno studio fotografico nella
+                        parte bassa di Manhattan nel 1918. Questo
+                        lavoro lo portò ad altri, in una varietà di giornali fino a quando, nel 1935, divetò un
+                        fotografo di notizie freelance. Incentrò la sua attività intorno al quartier generale della
+                        polizia e nel 1938 ottennte il permesso di installare una radio della polizia nella sua auto.
+                        Ciò gli permise di scattare le prime e più sensazionali fotografie di eventi di notizie e di
                         offrirle in vendita a pubblicazioni come Herald-Tribune, Daily News, Post, The Sun e PM Weekly,
                         tra gli altri. Durante gli anni '40, le fotografie di Weegee apparvero al di fuori della stampa
-                        tradizionale e anche lì incontrarono successo. La Photo League di New York tenne una mostra del
+                        tradizionale e anche lì ebbero un grande successo. La Photo League di New York tenne una mostra
+                        del
                         suo lavoro nel 1941, e il Museum of Modern Art iniziò a raccogliere il suo lavoro e lo espose
                         nel 1943. Weegee pubblicò le sue fotografie in diversi libri, tra cui Naked City (1945),
                         Weegee's People (1946), e Naked Hollywood (1953). Dopo essersi trasferito a Hollywood nel 1947,
                         ha dedicato la maggior parte delle sue energie alla realizzazione di film e fotografie di 16
                         millimetri per la sua serie "Distortions", un progetto che ha portato a ritratti sperimentali di
-                        celebrità e personaggi politici. Tornò a New York nel 1952 e tenne conferenze e scrisse di
-                        fotografia fino alla sua morte, il 26 dicembre 1968. La Photo League di New York tenne una
-                        mostra del suo lavoro nel 1941, e il Museum of Modern Art iniziò a raccogliere il suo lavoro e
-                        lo espose nel 1943. Weegee pubblicò le sue fotografie in diversi libri, tra cui Naked City
-                        (1945), Weegee's People (1946), e Naked Hollywood (1953).
-                    </p>
-                </article>
-            </div>
-            <div class="row">
-                <article class="col-md header__bio--secondo">
-                    <p> Dopo essersi trasferito a Hollywood
-                        nel 1947, ha dedicato la maggior parte delle sue energie alla realizzazione di film e
-                        fotografie
-                        di 16 millimetri per la sua serie "Distortions", un progetto che ha portato a ritratti
-                        sperimentali di celebrità e personaggi politici. Tornò a New York nel 1952 e tenne
-                        conferenze e
-                        scrisse di fotografia fino alla sua morte il 26 dicembre 1968. La Photo League di New York
-                        tenne
-                        una mostra del suo lavoro nel 1941, e il Museum of Modern Art iniziò a raccogliere il suo
-                        lavoro
-                        e lo espose nel 1943. Weegee pubblicò le sue fotografie in diversi libri, tra cui Naked City
-                        (1945), Weegee's People (1946), e Naked Hollywood (1953). Dopo essersi trasferito a
-                        Hollywood
-                        nel 1947, ha dedicato la maggior parte delle sue energie alla realizzazione di film e
-                        fotografie
-                        di 16 millimetri per la sua serie "Distortions", un progetto che ha portato a ritratti
-                        sperimentali di celebrità e personaggi politici. Tornò a New York nel 1952 e tenne
-                        conferenze e
-                        scrisse di fotografia fino alla sua morte il 26 dicembre 1968. Weegee's People (1946) e
-                        Naked
-                        Hollywood (1953). Dopo essersi trasferito a Hollywood nel 1947, ha dedicato la maggior parte
-                        delle sue energie alla realizzazione di film e fotografie di 16 millimetri per la sua serie
-                        "Distortions", un progetto che ha portato a ritratti sperimentali di celebrità e personaggi
-                        politici. Tornò a New York nel 1952 e tenne conferenze e scrisse di fotografia fino alla sua
-                        morte il 26 dicembre 1968. Weegee's People (1946) e Naked Hollywood (1953). Dopo essersi
-                        trasferito a Hollywood nel 1947, ha dedicato la maggior parte delle sue energie alla
-                        realizzazione di film e fotografie di 16 millimetri per la sua serie "Distortions", un
-                        progetto
-                        che ha portato a ritratti sperimentali di celebrità e personaggi politici. Tornò a New York
-                        nel
-                        1952 e tenne conferenze e scrisse di fotografia fino alla sua morte, il 26 dicembre 1968.
-                        L'opera fotografica di Weegee è insolita in quanto ha avuto successo nei media popolari e
+                        celebrità e personaggi politici. Tornò inseguito a New York nel 1952 dove tenne conferenze e
+                        scrisse a
+                        proposito di
+                        fotografia fino alla sua morte, il 26 dicembre 1968. L'opera fotografica di Weegee è insolita in
+                        quanto ha avuto successo nei media popolari e allo stesso tempo era
                         rispettata dalla comunità delle belle arti durante la sua vita. La capacità delle sue
                         fotografie
                         di navigare tra questi due regni deriva dalla forte connessione emotiva forgiata tra lo
                         spettatore e i personaggi nelle sue fotografie, nonché dall'abilità di Weegee nello
                         scegliere i
-                        momenti più significativi e significativi degli eventi che ha fotografato. La mostra
-                        retrospettiva di ICP del suo lavoro nel 1998 attesta la continua popolarità di Weegee; il
+                        momenti più significativi degli eventi che ha fotografato. Il
                         suo
                         lavoro è spesso ricordato o rappresentato nella televisione contemporanea, nei film e in
                         altre
-                        forme di intrattenimento popolare. </p>
+                        forme di intrattenimento popolare.
+                    </p>
+
                 </article>
 
             </div>
         </div>
+        </article>
+        </container>
     </main>
-    </main>
+    <footer>
+        <small>© 2021 Copyright Design by Matteo Caridi </small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,13 @@ html {
 body{
     font-family: 'Playfair Display', serif;
 }
+
+body blockquote{
+    text-align: center;
+    font-style:italic;
+    padding: 2rem 0;
+}
+
 .container__bio {
     font-family: 'Bodoni Moda', serif;
 
@@ -13,6 +20,7 @@ body{
     /* border: 1px solid red; */
     text-align: justify;
 }
+
 
 /* Scrollbar Hidden*/
 ::-webkit-scrollbar {

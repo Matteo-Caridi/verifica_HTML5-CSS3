@@ -20,7 +20,7 @@
 
         body {
             font-family: 'Bodoni Moda', serif;
-            font-size: 15px;
+
         }
 
         .col-md {
@@ -59,6 +59,8 @@
         .gotopbtn:hover {
             color: #bdc3c7;
         }
+
+        /* Fine bottone */
 
         .container__header {
             height: 20rem;
@@ -103,6 +105,50 @@
         .header__img--artist {
             max-width: 100%;
         }
+
+
+
+        /* INIZIO Position Indicator */
+
+        progress {
+            /* Positioning */
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            /* Dimensions */
+            width: 100%;
+            height: 5px;
+
+            /* Reset the appearance */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            /* Get rid of the default border in Firefox/Opera. */
+            border: none;
+
+            /* Progress bar container for Firefox/IE10+ */
+            background-color: transparent;
+
+            /* Progress bar value for IE10+ */
+            color: #bdc3c7;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #bdc3c7;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: #bdc3c7;
+        }
+
+        /* FINE Position Indicator */
+
     </style>
 </head>
 
@@ -150,177 +196,189 @@
                     <h1>Biography</h1>
                 </i>
             </div>
+            <progress value="0" max="1"></progress>
             <article class="col-md has-dropcap">
-                La fotografia, all'inizio della metà del diciannovesimo secolo, si è concentrata sulla pittura un
-                distretto alla volta. La ritrattistica, di tipo solenne e schietto, si è subito proposta. La sua
-                composizione di fermo, semplice e tradizionale, soddisfaceva una necessità meccanica della nuova
-                arte: i primi fotografi in studio, in balia di esposizioni di lunga durata, spesso fissavano la
-                parte posteriore della testa dei loro soggetti con morsetti invisibili dalla fotocamera o dallo
-                spettatore. I paesaggi si mantenevano immobili se il vento non soffiava, così Gustave Le Gray poteva
-                diventare un Poussin automatizzato, mentre Mathew Brady si sforzava di superare Gilbert Stuart. La
-                pittura di storia - affollata, violenta, declamatoria - ha dovuto rimandare il suo aggiornamento
-                fotografico fino a quando le fotocamere più piccole non rendevano la fotografia portatile e veloce.
-                Ma la pittura di genere, con i suoi assemblaggi casuali di vita ordinaria,
+                <p>La fotografia, all'inizio della metà del diciannovesimo secolo, si è concentrata sulla pittura un
+                    distretto alla volta. La ritrattistica, di tipo solenne e schietto, si è subito proposta. La sua
+                    composizione di fermo, semplice e tradizionale, soddisfaceva una necessità meccanica della nuova
+                    arte: i primi fotografi in studio, in balia di esposizioni di lunga durata, spesso fissavano la
+                    parte posteriore della testa dei loro soggetti con morsetti invisibili dalla fotocamera o dallo
+                    spettatore. I paesaggi si mantenevano immobili se il vento non soffiava, così Gustave Le Gray poteva
+                    diventare un Poussin automatizzato, mentre Mathew Brady si sforzava di superare Gilbert Stuart. La
+                    pittura della storia - affollata, violenta, declamatoria - ha dovuto rimandare il suo aggiornamento
+                    fotografico fino a quando le fotocamere più piccole non rendevano la fotografia portatile e veloce.
+                    Ma la pittura di genere, con i suoi assemblaggi casuali di vita ordinaria, era pronta per
+                    appropriarsi
+                    del nuovo mezzo.</p>
 
-                In " Bystander " (Laurence King), una storia recentemente aggiornata della fotografia di strada,
-                Colin Westerbeck e Joel Meyerowitz sottolineano la precoce inclinazione del genere verso le "persone
-                umili come soggetti". "Photographic Album for the Artist and the Amateur" (1851) di Louis Désiré
-                Blanquart-Evrard e "Street Life in London" (1877) di John Thomson hanno messo le immagini di
-                spazzacamini e mugnai di fronte a spettatori benestanti che potevano guardarli con curiosità e
-                preoccupazione: "Si sentiva che le persone illetterate e senza complicazioni conservassero una
-                capacità di sincerità altrimenti perduta, a cui gli artisti e gli intellettuali moderni desideravano
-                ardentemente". All'inizio del ventesimo secolo, quando le capacità documentaristiche della
-                fotografia diventarono riformiste nelle mani di Jacob Riis e Paul Strand, era ancora, come il famoso
-                titolo di Riis mostrato, una questione di "l'altra metà" viene vista da coloro appollaiati molto in
-                alto.
+                <p>In "Bystander" (Laurence King), una storia recentemente aggiornata della fotografia di strada,
+                    Colin Westerbeck e Joel Meyerowitz sottolineano la precoce inclinazione del genere verso le "persone
+                    umili come soggetti". "Photographic Album for the Artist and the Amateur" (1851) di Louis Désiré
+                    Blanquart-Evrard e "Street Life in London" (1877) di John Thomson hanno messo le immagini di
+                    spazzacamini e mugnai di fronte a spettatori benestanti che potevano guardarli con curiosità e
+                    preoccupazione: "Si sentiva che le persone illetterate e senza complicazioni conservassero una
+                    capacità di sincerità altrimenti perduta che gli artisti e gli intellettuali moderni desideravano
+                    ardentemente". All'inizio del ventesimo secolo, quando le capacità documentaristiche della
+                    fotografia diventarono riformiste per mano di Jacob Riis e Paul Strand, era ancora, come mostrato
+                    dal
+                    famoso
+                    titolo di Riis, una questione di come "l'altra metà" viene vista da coloro appollaiati molto in
+                    alto.</p>
 
-                Solo quando i giornali scandalistici entrarono in circolazione di massa dopo la prima guerra
-                mondiale, sostenevano Westerbeck e Meyerowitz, quelle "persone umili" diventarono il pubblico oltre
-                che l'oggetto. Più di chiunque altro, era Arthur Fellig, noto con insistenza come Weegee the Famous,
-                le cui "fotografie dei poveri erano state fatte, almeno in origine, per i poveri stessi". I
-                newyorkesi Weegee fotografati - specialmente quelli coinvolti in improvvise calamità di criminalità
-                e incendio - ottennero una sorta di fama che durò non quindici minuti ma più di quindici ore, finché
-                l'edizione del mattino successivo non spazzò via quella del pomeriggio precedente.
+                <p>Secondo Westerbeck e Meyerowitz, solo quando i giornali scandalistici entrarono in circolazione dopo
+                    la prima guerra
+                    mondiale quelle "persone umili" diventarono il pubblico oltre
+                    che l'oggetto. Più di chiunque altro, era Arthur Fellig, noto con
+                    insistenza come Weegee the Famous,
+                    le cui "fotografie dei poveri erano state fatte, almeno in origine, per i poveri stessi". I
+                    newyorkesi fotografati da Weegee - specialmente quelli coinvolti in improvvise calamità di
+                    criminalità
+                    e incendio - ottennero una sorta di fama che durò non quindici minuti ma più di quindici ore, finché
+                    l'edizione del mattino successivo non spazzò via quella del pomeriggio precedente.</p>
 
-                Per decenni, Weegee è stato raccolto come arte, ripristinando così parte della dinamica originale
-                dell'altra metà tra spettatore e immagine. I libri da tavolino del suo lavoro abbondano: “ Unknown
-                Weegee ” (2006), prodotto per una mostra all'International Center of Photography, è il meno pesante
-                e meglio organizzato; " Weegee's New York: Photographs 1935-1960 " (1982) è il più crudo. A questi
-                si è recentemente aggiunto “ Extra! Weegee! ”(Hirmer), che contiene quasi quattrocento fotografie,
-                accanto alle didascalie originali, spesso esuberanti, apposte da Acme Newspictures, l'agenzia
-                attraverso la quale le vendeva Weegee. Ma non c'è stata una biografia completa del fotografo. Ora "
-                Flash: The Making of Weegee the Famous " di Christopher Bonanos"(Holt) ha rimpiazzato una serie di
-                ricordi frammentari e il libro di memorie rumoroso e inaffidabile," Weegee by Weegee ", pubblicato
-                nel 1961.
+                <p>Per decenni, il lavoro di Weegee è stato considerato come arte, ripristinando così parte della
+                    dinamica originale
+                    "dell'altra metà" tra spettatore e immagine.
+                    I libri sul suo lavoro abbondano: “Unknown
+                    Weegee” (2006) è il meno pesante
+                    e meglio organizzato mentre "Weegee's New York: Photographs 1935-1960" (1982) è il più crudo. A
+                    questi
+                    si è recentemente aggiunto “Extra! Weegee!” (Hirmer), che contiene quasi quattrocento fotografie,
+                    accanto alle didascalie originali, spesso esuberanti, apposte da Acme Newspictures, l'agenzia
+                    attraverso la quale le vendeva Weegee. Ma non c'è mai stata una biografia completa del fotografo.
+                    Ora "Flash: The Making of Weegee the Famous" di Christopher Bonanos (Holt) ha rimpiazzato tutta una
+                    serie di
+                    ricordi frammentari compreso il libro di memorie, "Weegee by Weegee", pubblicato
+                    nel 1961, che fece scalpore risultando peraltro inaffidabile.</p>
 
-                Usher Fellig nacque in una famiglia di ebrei galiziani nel 1899. Divenne Arthur qualche tempo dopo
-                essere arrivato nel Lower East Side, dieci anni dopo. Secondo Bonanos, il suo "senso della famiglia"
-                era così "minimo" che in quel libro di memorie ha contato male i suoi fratelli. I Fellig si unirono
-                agli abitanti delle case popolari che presto avrebbero costituito gran parte degli argomenti di
-                Arthur.
+                <!-- BIOGRAFIA -->
 
-                Il suo coup de foudre arrivò, ha poi ricordato, prima di lasciare la scuola, in seconda media: “Mi
-                ero fatto fare una foto da un fotografo di tintpo di strada, ed ero rimasto affascinato dal
-                risultato. Penso di essere stato quello che potresti chiamare un fotografo "nato per natura", con
-                ipo - le sostanze chimiche usate in camera oscura - nel sangue. " Acquistò un kit per la produzione
+                <p>Usher Fellig nacque in una famiglia di ebrei galiziani nel 1899. Divenne Arthur qualche tempo dopo
+                    essere arrivato nel Lower East Side, dieci anni dopo. Secondo Bonanos, il "senso della famiglia" per
+                    Weegee
+                    era così "minimo" che in quel libro di memorie ("Weegee by Weegee") ha contato male i suoi fratelli.
+                    I Fellig si unirono
+                    agli abitanti delle case popolari che presto avrebbero costituito gran parte degli argomenti di
+                    Arthur.</p>
+
+                <p>L'amore per la fotografia arrivò prima di lasciare la scuola, in seconda media:
+                <blockquote>“Mi
+                    ero fatto fare una foto da un fotografo di tintpo di strada, ed ero rimasto affascinato dal
+                    risultato. Penso di essere stato quello che potresti chiamare un fotografo "nato per natura", con
+                    ipo - le sostanze chimiche usate in camera oscura - nel sangue."</blockquote>
+                Acquistò un kit per la produzione
                 di tintometri per corrispondenza e in seguito si fece assumere, a quindici anni, per scattare foto
                 per compagnie di assicurazioni e cataloghi per corrispondenza. Comprò un pony su cui posare monelli
                 di strada i cui genitori erano disposti a pagare per immagini che facessero sembrare i loro figli
-                piccoli grandi. (Il pony, che ha chiamato Hypo, ha mangiato troppo ed è stato recuperato.) Durante i
-                primi anni venti, Fellig ha lavorato nelle camere oscure del Timese Acme Newspictures, che dormiva
-                negli uffici di Acme quando non poteva pagare l'affitto. Ha mantenuto i fotografi dell'agenzia
-                davanti alla concorrenza imparando a sviluppare le immagini in metropolitana, subito dopo che erano
-                state scattate. Nel 1925, Acme gli permetteva di scattare fotografie, anche se non accreditate,
-                delle sue.
+                piccoli grandi. Durante i
+                primi anni venti, Fellig ha lavorato nelle camere oscure del Timese Acme Newspictures e dormiva
+                negli uffici quando non poteva pagare l'affitto. E' riuscito a battere la concorrenza dei
+                fotografi dell'agenzia
+                imparando a sviluppare le immagini in metropolitana, subito dopo che erano
+                state scattate. Nel 1925 la Acme gli permise di pubblicare fotografie tutte sue, anche se non
+                accreditate.</p>
 
-                Bonanos descrive la telecamera Speed ​​Graphic, che ancora oggi fa ancora parte del Daily Newslogo,
-                in quanto "resistente come qualsiasi cosa, costruito principalmente in alluminio e acciaio lavorati
-                a macchina". Era l'unica credenziale stampa di cui Fellig aveva bisogno per omicidi e incendi, dove,
-                dopo aver lasciato Acme, nel 1934, continuò a presentarsi con uno zelo maniacale da freelance. Un
-                paio di anni dopo, viveva in una stanza al 5 Centre Market Place, senza acqua calda ma con una
-                manciata di libri, tra cui "Live Alone and Like It" e "The Sex Life of the Unmarried Adult". Ha
-                decorato il posto con le sue fotografie pubblicate - "come teste imbalsamate sul muro di un
-                cacciatore", come dice Bonanos. È arrivato all'azione notturna così velocemente che ha sviluppato (e
-                incoraggiato) la reputazione di essere un sensitivo. Bonanos mostra che il successo di Weegee aveva
-                più a che fare con la tenacia che con la telepatia; un campanello collegava la stanza del fotografo
-                agli allarmi dei vigili del fuoco, e ha ottenuto il permesso di installare una radio della polizia
-                nella sua Chevrolet del '38. Per quanto Weegee volesse che le persone credessero che il suo
-                soprannome professionale derivasse dall'essere riconosciuto come una tavola Ouija umana, in realtà
-                derivava dal suo primo faticoso lavoro di seccatoio - un essiccatore di stampe appena sviluppate -
-                nelLa camera oscura di Times .
+                <p>La telecamera Speed ​​Graphic, "resistente come qualsiasi cosa, costruito principalmente in
+                    alluminio e acciaio lavorati
+                    a macchina" era l'unica credenziale di cui Fellig aveva bisogno per omicidi e incendi, dove,
+                    dopo aver lasciato la Acme, nel 1934, continuò a presentarsi con uno zelo maniacale da freelance. Un
+                    paio di anni dopo si trasferì in una stanza al 5 di Centre Market Place, senza acqua calda ma con
+                    una
+                    manciata di libri, tra cui "Live Alone and Like It" e "The Sex Life of the Unmarried Adult". Decorò
+                    il posto con le sue fotografie pubblicate. È arrivato all'azione notturna così velocemente
+                    che ha sviluppato (e
+                    incoraggiato) la reputazione di essere un sensitivo. Bonanos mostra che il successo di Weegee aveva
+                    più a che fare con la tenacia che con la telepatia; un campanello collegava la stanza del fotografo
+                    agli allarmi dei vigili del fuoco, e ha ottenuto il permesso di installare una radio della polizia
+                    nella sua Chevrolet del '38. Per quanto Weegee volesse che le persone credessero che il suo
+                    soprannome professionale derivasse dall'essere riconosciuto come una tavola Ouija umana, in realtà
+                    derivava dal suo primo faticoso lavoro di seccatoio - un essiccatore di stampe appena sviluppate -
+                    nelLa camera oscura di Times .</p>
+                <p>
+                    Tra i "nove quotidiani" che hanno raccontato la metropoli tra le due guerre mondiali vi era Il
+                    Times,
+                    “impaziente di spargimenti di
+                    sangue, più interessato a Berlino che a Bensonhurst” e l' Herald-Tribune voleva che i fotografi si
+                    presentassero per gli incarichi indossando cravatte. Nessuno dei due impiegava Weegee regolarmente,
+                    e sebbene i tabloid girassero su immagini, la sua unica vera fonte di reddito proveniva dai fogli di
+                    giornale
+                    pomeridiani, in particolare dal Post , allora a grandezza naturale e liberale ma altrettanto
+                    "schifoso di fare soldi" come lo è oggi. The World-Telegram fu il primo a concedere a Weegee le
+                    singole linee di credito che presto avrebbe comandato a tutti gli altri. Le immagini dell'omicidio
+                    di Weegee
+                    hanno sfondato non a causa della loro "qualità binaria di vita e di morte" o della loro "felicità
+                    tecnica. . . con angoli e giochi di ombre” ma soprattutto perché i gangster,
+                    sanguinanti, ben vestiti e ben calzati li rendevano “più divertenti” di tutti gli altri.</p>
 
-                Bonanos, il redattore cittadino della rivista New York , raccoglie i "nove quotidiani" che hanno
-                raccontato la metropoli tra le due guerre mondiali. Il Times era “impaziente di spargimenti di
-                sangue, più interessato a Berlino che a Bensonhurst” e l' Herald-Tribune voleva che i fotografi si
-                presentassero per gli incarichi indossando cravatte. Nessuno dei due impiegava Weegee regolarmente,
-                e sebbene i tabloid girassero su immagini, il suo vero pane e burro proveniva dai fogli di giornale
-                pomeridiani, in particolare dal Post , allora a grandezza naturale e liberale ma altrettanto
-                "schifoso di fare soldi" come lo è oggi. The World-Telegramfu il primo a concedere a Weegee le
-                singole linee di credito che presto avrebbe comandato a tutti gli altri. Bonanos fa risorgere il
-                ruggito inchiostro di questo mondo con un bel labbro nervoso: le immagini dell'omicidio di Weegee
-                hanno sfondato non a causa della loro "qualità binaria di vita e di morte" o della loro "felicità
-                tecnica. . . con angoli e giochi di ombre ”ma soprattutto perché i loro gangster sparsi,
-                sanguinanti, ben vestiti e ben calzati li rendevano“ più divertenti ”di tutti gli altri.
+                <p>Il ritmo frenetico di Weegee era una questione di necessità economiche e di temperamento. Non
+                    importa quanto velocemente dovesse mettersi in piedi, il lavoro richiedeva molte attese. Tra le
+                    catastrofi e le foto di incidenti automobilistici pagavano solo due dollari e cinquanta centesimi
+                    l'una. "Naked City", il primo libro di fotografie dal titolo immortale di Weegee, pubblicato nel
+                    1945, mostra un'assegno' della Time Inc. che registra un pagamento di trentacinque
+                    dollari per "due omicidi". Nell'aprile del 1937, per tre giorni New York fornì a Weegee molto
+                    materiale
+                    criminale: un omicidio con martello, un incendio doloso, un incidente tra camion, una rissa di
+                    seguaci dell'Harlem's Father Divine e l'arresto di una giovane truffatrice.</p>
 
-                Il loro primo omicidio.
-                "Il loro primo omicidio" (1941). Fotografia di Weegee / ICP / Getty
-                Bonanos si dimostra anche intraprendente, rintracciando un bambino di sette anni che fa il furbo che
-                Weegee ha fotografato dopo un omicidio nel 1939, così come un bambino che è apparso in una scena di
-                folla a Coney Island l'anno successivo. I lettori vorranno mantenere le loro collezioni Weegee sul
-                tavolino; Bonanos descrive più immagini di quante il suo editore potrebbe ragionevolmente
-                riprodurre, anche in un libro che a volte diventa implacabile e pieno, come un provino invece di una
-                stampa selezionata. Ma Weegee e il suo mondo non incoraggiano il minimalismo e, cinquant'anni dopo
-                la sua morte, ha finalmente acquisito un biografo che può stargli dietro.
 
-                Il ritmo frenetico di Weegee era una questione di necessità economiche e di temperamento. Non
-                importa quanto velocemente potesse essere in piedi, il lavoro richiedeva molte attese tra le
-                catastrofi e le foto di incidenti automobilistici pagavano solo due dollari e cinquanta centesimi
-                l'una. " Naked City ", il primo libro di fotografie dal titolo immortale di Weegee, pubblicato nel
-                1945, riproduce una matrice di assegno della Time Inc. che registra un pagamento di trentacinque
-                dollari per "due omicidi". Bonanos catturò la variazione e l'intensità di tutto questo in un
-                "conteggio di disordini" dell'aprile 1937. Per tre giorni, New York fornì a Weegee un pasto
-                criminale: un omicidio con martello, un incendio doloso, un incidente di camion, una rissa di
-                seguaci di Harlem's Father Divine e la prenotazione di una giovane donna malvagia.
 
-                VIDEO DAL NEW YORKER
-                Cosa è andato storto nel disastro del traghetto Sewol?
+                <p>Durante gli anni Quaranta, il quoditiano PM, liberale e carico di immagini, mise Weegee sotto
+                    contratto, risaltando le sue immagini, portando i dettagli e l'affinamento
+                    delle linee attraverso "un processo innovativo che coinvolge inchiostro riscaldato e carta
+                    raffreddata". La sua prima mostra, nel 1941, alla galleria della Photo League, nell'East
+                    Twenty-first
+                    Street, ottenne buone recensioni. Il suo titolo, "Murder Is My Business", era un pezzo di
+                    auto-pubblicità noir destinato a essere superato dagli eventi: grazie allo scoppio del racket e a
+                    una guerra mondiale che prosciugava gli uomini, New York era destinata a un prolungato tuffo nel
+                    tasso di uccisioni locali.</p>
 
-                Durante gli anni Quaranta, il primo ministro di breve durata, liberale e carico di immagini , che
-                Bonanos considera un "giornale incoerente e spesso in ritardo per la storia ma piuttosto buono", ha
-                messo Weegee sul fermo e ha fatto risaltare le sue immagini, portando i dettagli e l'affinamento
-                delle linee attraverso "un processo innovativo che coinvolge inchiostro riscaldato e carta
-                raffreddata". La sua prima mostra, nel 1941, alla galleria della Photo League, in East Twenty-first
-                Street, ottenne buone recensioni. Il suo titolo, "Murder Is My Business", era un pezzo di
-                auto-pubblicità noir destinato a essere superato dagli eventi: grazie allo scoppio del racket e a
-                una guerra mondiale che prosciugava gli uomini, New York era destinata a un prolungato tuffo nel
-                tasso di uccisioni locali.
 
-                Showgirl dietro le quinte.
-                "Showgirl Backstage" (circa 1950). Fotografia di Weegee / ICP / Getty
-                A Weegee piaceva essere conosciuto come "il fotografo ufficiale di Murder Inc.", ma le sue foto da
-                gangster mancano della pietà e della paura - oltre che della concupiscenza - che la sua macchina
-                fotografica ha strappato a persone che commettono crimini di passione e pura stupidità. Nell'estate
-                del 1936, fece un tuffo con le fotografie dell'adolescente Gladys MacKnight e del suo fidanzato dopo
-                il loro arresto per l'omicidio con l'ascia di guerra della madre di Gladys che disapprovava. In una
-                delle foto, la coppia di adolescenti appare calma e un po 'imbronciata, come se fosse stata messa a
-                terra, non prenotata per omicidio capitale. Weegee mostra una riconoscibile compassione verso il
-                dispiacere in preda al panico di Robert Joyce, un amante dei Dodgers che ha sparato e ucciso due fan
-                dei Giants quando è stato caricato con diciotto birre; la sua faccia ci raggiunge attraverso
-                l'obiettivo di Weegee mentre si riprende, accanto a un poliziotto, i suoi occhi spalancati per la
-                realizzazione di ciò che ha fatto. Weegee non ha mai avuto il desiderio di sparare a un omicidio
-                mentre stava accadendo, ma il suo vero dono era di fotografare i bersagli dopo che erano diventati
-                cadaveri. Ha "spesso osservato", osserva Bonanos, "che si è preoccupato di far sembrare i morti che
-                stessero solo facendo un pisolino".
+                <p>A Weegee piaceva essere conosciuto come "il fotografo ufficiale della Murder Inc.", ma le sue foto da
+                    gangster mancavano della pietà e della paura - oltre che dell'avidità - che la sua macchina
+                    fotografica ha strappato a persone che commettevano crimini per passione e pura stupidità.
+                    Nell'estate
+                    del 1936, si dedicò alle fotografie dell'adolescente Gladys MacKnight e del suo fidanzato dopo
+                    il loro arresto per l'omicidio di Gladys, la madre disapprovante. In una
+                    delle foto, la coppia di adolescenti appare calma e un po' imbronciata, come se fosse stata messa in
+                    punizione. Weegee mostra una riconoscibile compassione verso il
+                    dispiacere di Robert Joyce, un amante dei Dodgers che in preda ai fumi dell'alcol ha sparato e
+                    ucciso due fan
+                    dei Giants; il suo volto ci raggiunge attraverso
+                    l'obiettivo di Weegee mentre si riprende, accanto a un poliziotto, con gli occhi spalancati per aver
+                    realizzato ciò che ha fatto. Weegee non ha mai avuto il desiderio di sparare durante un omicidio, ma
+                    il suo vero dono era di fotografare i bersagli dopo che erano diventati
+                    cadaveri. Spesso si è preoccupato di far sembrare i morti come se
+                    stessero solo facendo un pisolino".</p>
 
-                Le foto di Weegee sono piene di veri dormienti - insieme a quelli che fingono cooperativamente di
-                dormire per la telecamera - nei bar e nelle porte, sulle panchine e nelle scatole di cartone, nelle
-                limousine e nei gabinetti, nelle missioni di Bowery o nel backstage. Divenne per chiudere gli occhi
-                quello che Edward Weston era per i peperoni e Philippe Halsman sarebbe stato per il salto. Anche le
-                sue fotografie di manichini, un altro soggetto frequente, sembrano suscitare un'attrazione e forse
-                un desiderio di riposo. I manichini non sembrano tanto inanimati quanto eterizzati, pronti a
-                ricongiungersi alla corsa al successo urbana una volta che avranno ottenuto quaranta ammiccamenti.
+                <p>Le foto di Weegee sono piene di veri e propri dormiglioni - insieme a quelli che fingono di dormire
+                    per la macchina fotografica - nei bar e nei portoni, in cima a panchine e scatole di cartone, nelle
+                    limousine e nei bagni, nel Bowery o dietro le quinte. Anche le sue fotografie di manichini, un altro
+                    soggetto frequente, sembrano evocare un fascino e forse un desiderio di riposo. I manichini non
+                    sembrano tanto inanimati quanto eterizzati, pronti a ricongiungersi alla razza dei ratti urbani una
+                    volta che hanno fatto una quarantina di pisolini.
+                </p>
 
-                Il voyeur era anche un esibizionista. Weegee a volte cedeva la sua macchina fotografica in modo da
-                poter inserire uno scatto invece di crearlo. È lui accanto a un baule aperto con un cadavere, ed
-                eccolo vestito da clown, che fotografa da un anello del circo. Nel 1937, Lifegli ha commissionato un
-                saggio fotografico sul processo di prenotazione di una stazione di polizia. Lo ha trasformato in un
-                servizio su un fotografo poliziesco: lui. La sua grandiosità è cresciuta con gli anni, nonostante,
-                oa causa di, il suo "grande complesso di inferiorità" auto-diagnosticato. Si è preso il merito di
-                aver contribuito a rendere Fiorello LaGuardia famoso (non importa che LaGuardia fosse già sindaco),
-                e ha scritto nel suo libro di memorie che lui e l'editorialista di gossip Walter Winchell "si sono
-                divertiti molto insieme, inseguendo storie nella notte". L'indice della robusta biografia di
-                Winchell di Neal Gabler non fa menzione di Weegee.
+                <p>Il voyeur era anche un esibizionista. Weegee a volte cedeva la sua macchina fotografica in modo da
+                    potersi inserire in uno scatto invece di crearlo. Nel 1937, Lifegli commissionò un
+                    saggio fotografico sul processo di prenotazione di una stazione di polizia. Lo ha trasformato in un
+                    servizio su un fotografo poliziesco: lui. La sua grandiosità crebbe con gli anni, nonostante, o a
+                    causa
+                    del suo auto-diagnosticato "grande complesso d'inferiorità". Si prese il merito di aver contribuito
+                    a
+                    rendere famoso Fiorello LaGuardia (non importa che LaGuardia fosse già sindaco), e scrisse nelle sue
+                    memorie che lui e il giornalista di gossip Walter Winchell si divertivano molto insieme, a caccia di
+                    storie nella notte.</p>
 
-                Salvavita .
-                "Life Saving" (1940). Fotografia di Weegee / ICP / Getty
-                Nel suo spettacolo di debutto, alla Photo League, Weegee ha esibito un'immagine estremamente
-                toccante di una madre e una figlia che piangono per due membri della famiglia che sono intrappolati
-                all'interno di una casa in fiamme, e l'ha intitolata "Arrosto". Pochi anni dopo, per "Naked City",
+
+
+                <!-- da rivedere -->
+                Durante la sua mostra di debutto, alla Photo League, Weegee espose un'immagine estremamente toccante di
+                una madre e una figlia che piangono per due membri della famiglia intrappolati in un palazzo in fiamme,
+                e la intitolò "Roast" ("Arrosto"). Pochi anni dopo, per "Naked City",
                 il libro di fotografie che ha assicurato per sempre la sua reputazione, Weegee ribattezzò l'immagine
-                "Ho pianto quando ho scattato questa foto". Cynthia Young, una curatrice dell'ICP, ha scritto che la
+                “I Cried When I Took This Picture” (Ho pianto quando ho scattato questa foto"). La
                 fotografia con il nuovo titolo è diventata "un nuovo tipo di autoritratto, rendendo il fotografo
-                parte del soggetto dell'immagine", anche se sottolinea che alcuni dei sostenitori di sinistra della
-                Photo League i membri non avevano gradito l'etichetta originale. Weegee ha davvero pianto? Colin
+                parte del soggetto dell'immagine". Weegee ha davvero pianto? Colin
                 Westerbeck una volta ha commentato: “No, Weegee, non l'hai fatto. Invece hai scattato quella fotodi
                 piangere. " La verità sul retitling non si trova da qualche parte nel mezzo, ma su entrambi i poli.
                 L'uomo che una volta disse: "La mia idea era di rendere la telecamera umana", provò un'emozione
@@ -329,79 +387,103 @@
                 dell'intenzione e il quadro che ci resta rimane, indiscutibilmente, un momento tagliato dalla vita
                 con un tenero coltello.
 
-                Il segreto della fotografia di Weegee - e il MO della sua vita rozza - era la capacità di operare
-                sia come donatore che come attiratore di attenzione. Weegee non ha imparato a guidare fino alla metà
-                degli anni Trenta, e prima di prendere la patente si è affidato a un autista adolescente, che lo ha
-                portato non solo alle ultime notizie ma anche al suo bordello preferito, negli anni Settanta
-                Occidentali. La signora lì, di nome May, "aveva degli spioncini nel muro" e lei e Weegee guardavano
-                il ragazzo con l'autista esibirsi nella stanza accanto. Weegee ha cancellato quest'ultimo dettaglio
-                dal manoscritto del suo libro di memorie, ma solo per salvare il conducente dall'imbarazzo.
-                All'inizio degli anni Quaranta, ha portato la sua macchina fotografica a infrarossi nelle sale
-                cinematografiche buie per fotografare le coppie che stavano facendo il broncio, e poi ha venduto le
-                immagini accreditate. Ha anche scattato alcune foto straordinarie di persone in stato di arresto. In
-                queste immagini, il voyeur in Weegee sembra sopraffatto da una rispettosa solidarietà con lo sfoggio
-                di sfida dei suoi sudditi. Nel suo libro di memorie, scrive di come ricevere “un telegramma da una
-                rivista maschile; volevano foto di persone anormali a cui piaceva vestirsi con abiti femminili.
-                Chiamavo quell'editore e gli dicevo che ciò che era anormale per lui era normale per me ".
+                <p>Il segreto della fotografia di Weegee - e il modus operandi della sua vita grossolana - era la
+                    capacità
+                    di operare sia come datore che come ricevitore di attenzione. Weegee non imparò a guidare fino alla
+                    metà
+                    degli anni Trenta, e prima di prendere la patente si affidò a un autista poco più che adolescente,
+                    che
+                    lo portava non
+                    solo sul luogo delle notizie ma anche al suo bordello preferito, il West Seventies. La signora, di
+                    nome
+                    May,
+                    "aveva degli spioncini nel muro" e lei e Weegee guardavano
+                    l'autista esibirsi nella stanza accanto. Weegee ha cancellato quest'ultimo dettaglio
+                    dal manoscritto del suo libro di memorie, ma solo per salvare il conducente dall'imbarazzo.
+                    All'inizio degli anni Quaranta, portò la sua macchina fotografica a infrarossi nelle sale
+                    cinematografiche buie per fotografare le coppie che si stavano baciando, vendend poi le immagini
+                    accreditate. Ha anche scattato alcune notevoli foto di persone travestite in arresto. In queste
+                    immagini, il voyeur di Weegee sembra sopraffatto da una rispettosa solidarietà con l'esibizione
+                    dei suoi soggetti. Nel suo libro di memorie, scrive di aver ricevuto
+                <blockquote>"un telegramma da
+                    una
+                    rivista
+                    maschile; volevano foto di tipi anormali a cui piaceva vestirsi da donna. Chiamavo l'editore e
+                    gli
+                    dicevo che ciò che era anormale per lui era normale per me".</blockquote>
+                </p>
 
-                Crimine insolito.
-                "Unusual Crime" (circa 1940). Fotografia di Weegee / ICP / Getty
-                A Weegee piaceva dire che stava cercando "una ragazza con un corpo sano e una mente malata". Le due
-                donne più importanti della sua storia erano candidati improbabili per un coinvolgimento prolungato.
-                Per tutto l'inizio e la metà degli anni Quaranta, Wilma Wilcox, un Dakotan del Sud che studiava per
-                un master in lavoro sociale alla Columbia, fornì a Weegee la compagnia non appiccicosa che
-                preferiva; quello che Bonanos chiama "il suo mix di pazienza da assistente sociale e robustezza
-                della prateria" le ha permesso di sopravvivere al suo "affetto irregolare". Nel 1947 sposò una donna
-                di nome Margaret Atwood, una prospera vedova che aveva incontrato alla firma di un libro per "
-                Weegee's People ", un seguito di "Naked City". Il matrimonio è durato alcuni anni. Weegee ha
-                impegnato la sua fede nuziale invece di divorziare.
 
-                La dinamica voyeur-esibizionista raggiunse il suo apice quando Weegee, per usare le parole di
-                Bonanos, "osservava gli osservatori", un interesse che cresceva nel tempo. Le sue foto di persone
-                che osservano crimini, incidenti e persino spettacoli felici hanno esteso quella che Westerbeck e
-                Meyerowitz vedono come la lunga tradizione della fotografia di strada di commemorare la folla invece
-                che la parata. Nel 2007, la Corte Suprema dello Stato di New York ha affermato il diritto del
-                fotografo di strada di scattare foto di persone in pubblico, cosa che non aveva mai preoccupato
-                Weegee. "Le persone povere non sono esigenti riguardo alla privacy", ha dichiarato. "Hanno altri
-                problemi."
 
-                Weegee ha realizzato tre delle sue più grandi vedute di spettatori tra il 1939 e il 1941. Il primo
-                di loro mostra persone ordinatamente disposte nelle finestre di un condominio di Prince Street, che
-                guardano fuori nella notte allegramente come se fossero state appena rivelate da dietro il piccoli
-                lembi di carta di un calendario dell'Avvento. Sotto di loro, sulla soglia di un caffè, c'è ciò che
-                li ha portati alle finestre: un cadavere rivendicato dalla mafia e un pugno di detective della
-                polizia ben vestiti. "I posti al balcone per un omicidio" correvano in Life , ritraendo
-                un'eccitazione innocua e priva di sensi di colpa, un'inversione carnevalesca di ciò che una
-                generazione dopo avrebbe potuto essere registrato all'omicidio di Kitty Genovese.
+                <p>
+                    A Weegee piaceva dire che stava cercando "una ragazza con un corpo sano e una mente malata". Le due
+                    donne più importanti della sua vita erano delle candidate improbabili per una relazione duratura.
+                    Per tutto l'inizio e la metà degli anni Quaranta, Wilma Wilcox, una ragazza del Sud Dakota che
+                    studiava
+                    per un master in assistenza sociale alla Columbia, fornì a Weegee la compagnia non appiccicosa che
+                    preferiva. Nel 1947 sposò una donna
+                    di nome Margaret Atwood, una prospera vedova che aveva incontrato alla firma di un libro per
+                    "Weegee's
+                    People", un seguito di "Naked City". Il matrimonio è durato alcuni anni. Successivamente Weegee ha
+                    impegnato la sua fede nuziale invece di divorziare.</p>
 
-                Nell'estate del 1940, Weegee catturò un gruppo di bagnanti che osservavano uno sforzo per rianimare
-                un nuotatore annegato. Il fulcro della foto è una bella giovane donna, la persona più preoccupata
-                per la fotocamera, l'unica che le fa un grande sorriso. Non disgusta lo spettatore; le piace, con il
-                suo desiderio di essere notata e la sua felicissima consapevolezza che lei, almeno, respira. È la
-                forza vitale, in tutta la sua malvagia allegria.
+                <p>La dinamica voyeur-esibizionista raggiunse il suo apice quando Weegee "osservava gli osservatori", un
+                    interesse che cresceva nel tempo. Le sue foto di persone
+                    che osservano crimini, incidenti e persino spettacoli felici hanno esteso quella che Westerbeck e
+                    Meyerowitz vedono come la lunga tradizione della fotografia di strada di commemorare la folla invece
+                    che la parata. Nel 2007, la Corte Suprema dello Stato di New York ha affermato il diritto del
+                    fotografo di strada di scattare foto di persone in pubblico, cosa che però non aveva mai preoccupato
+                    Weegee. "Le persone povere non sono esigenti riguardo alla privacy", ha dichiarato. "Hanno altri
+                    problemi."</p>
 
-                Dottor Eliot, lasceresti uscire il cane
-                "Dr. Eliot, faresti uscire il cane? "
-                L'anno successivo, Weegee ha ottenuto il meglio dai suoi studi gawker, un quadro suggerito da quello
-                che Bonanos identifica come "un omicidio di poco conto all'angolo tra North Sixth e Roebling
-                Street", a Williamsburg. In esso, più di una dozzina di persone, la maggior parte delle quali
-                bambini, esibiscono di tutto, dalla paura al gusto stridulo. "Extra! Weegee! " rivela che la
-                didascalia Acme per questo tableau cinetico era "Chi ha detto che le persone sono tutte uguali?",
-                che Weegee, con il suo gusto per il colpo al corpo, ha cambiato in "Il loro primo omicidio".
-                L'uccisione che ha avuto luogo è semplicemente il big bang; i volti, ciascuno un vivido registro
-                degli effetti a catena del crimine, diventano il vero dramma.
+                <p>Weegee ha realizzato tre delle sue più grandi vedute di spettatori tra il 1939 e il 1941. Il primo
+                    di loro mostra persone ordinatamente disposte nelle finestre di un condominio di Prince Street, che
+                    guardano allegramente fuori nella notte, come se fossero state appena rivelate da dietro il piccoli
+                    lembi di carta di un calendario dell'Avvento. Sotto di loro, sulla soglia di un caffè, c'è ciò che
+                    li ha portati alle finestre: un cadavere rivendicato dalla mafia e un pugno di detective della
+                    polizia ben vestiti. "Balcony Seats at a Murder" uscì su Life, ritraendo un'eccitazione innocua e
+                    senza
+                    sensi di colpa, un'inversione carnevalesca di quello che una generazione dopo sarebbe stato
+                    registrato
+                    come l'omicidio di Kitty Genovese.</p>
 
-                “Non ho tempo per i messaggi nelle mie foto. Questo è per Western Union ", ha detto Weegee,
-                strisciando la linea di Samuel Goldwyn. Ma di tanto in tanto faceva una fotografia con un chiaro
-                intento politico, come quella di Joe McWilliams, un fascista candidato al Congresso del 1940
-                mostrato guardando, e come, il culo di un cavallo. C'è anche l'immagine di una madre nera che tiene
-                in braccio un bambino piccolo dietro il vetro in frantumi della loro porta d'ingresso, distrutta da
-                duri che non volevano che si trasferissero a Washington Heights. Più deliberatamente, Weegee ha
-                realizzato una serie di foto di incidenti automobilistici in un punto della Henry Hudson Parkway
-                dove la rampa di uscita aveva un disperato bisogno di una recinzione; era orgoglioso che la loro
-                pubblicazione aiutasse a installare una barriera.
+                <p>Nell'estate del 1940, Weegee catturò un gruppo di bagnanti che osservavano lo sforzo di rianimare un
+                    nuotatore annegato. Il fulcro dell'immagine è una giovane e bella donna, la persona più preoccupata
+                    per
+                    la macchina fotografica, l'unica che le fa un gran sorriso. Non disgusta lo spettatore; lo soddisfa,
+                    con
+                    il suo desiderio di essere notata, e la sua felice realizzazione che lei, almeno, respira. È la
+                    forza
+                    vitale, in tutta la sua perfida allegria.</p>
 
-                In una prefazione a "Naked City", William McCleery, un premiereditore, ha rilevato un impulso
+                <p>L'anno seguente, Weegee realizzò il migliore dei suoi studi da gawker, una foto scattata e definita
+                    come
+                    "un piccolo omicidio all'angolo tra North Sixth e Roebling Streets", a
+                    Williamsburg. In essa, più di una dozzina di persone, la maggior parte dei quali bambini, mostrano
+                    di
+                    tutto, dallo spavento allo stridore di gioia. "Extra! Weegee!" rivela che la didascalia Acme per
+                    questo
+                    tableau cinetico era "Who Said People Are All Alike?", che Weegee, con il suo gusto per il colpo di
+                    corpo, ha cambiato in "Their First Murder". L'omicidio che ha avuto luogo è solo il big bang; i
+                    volti,
+                    ognuno dei quali è una vivida registrazione degli effetti a catena del crimine, diventano il vero
+                    dramma.</p>
+
+
+                <p>
+                <blockquote>
+                    "Non ho tempo per i messaggi nelle mie foto. Quello è per la Western Union"
+                </blockquote>, disse Weegee, rubando la
+                battuta di Samuel Goldwyn. Ma una volta ogni tanto faceva una fotografia con un chiaro intento politico,
+                come quella di Joe McWilliams, un candidato fascista al congresso del 1940 mostrato mentre guarda, e
+                come, il culo di un cavallo. C'è anche l'immagine di una madre nera che tiene in braccio un bambino
+                piccolo dietro il vetro in frantumi della loro porta d'ingresso, sfondata da razzisti che non volevano
+                che
+                si trasferissero a Washington Heights. Più deliberatamente, Weegee fece una serie di foto di incidenti
+                d'auto in un punto dell'Henry Hudson Parkway dove la rampa di uscita aveva bisogno di una recinzione;
+                era orgoglioso che la loro pubblicazione aiutò a far installare una barriera.</p>
+
+                In una prefazione a "Naked City", William McCleery, un editore del PM, ha rilevato un impulso
                 crociato nella foto di Weegee di bambini poveri in fuga da un'ondata di caldo di New York: "Non vuoi
                 che quei ragazzi continuino a dormire su quella scala antincendio per sempre, vero?" Anche Bonanos
                 pensa che questa fotografia sia stata fatta e accolta con indignazione, ma l'immagine è sempre stata
@@ -413,142 +495,161 @@
                 gioco nella città, insieme alla sensazione che il vecchio mondo delle case popolari era pronto a
                 fare un bel salto verso qualcosa di meglio.
 
-                Mentre la World Series del 1943 prendeva il via.
-                "Mentre la serie mondiale del 1943 prendeva il via" (1943). Fotografia di Weegee / ICP / Getty
-                Ragazza al circo.
-                “Girl at the Circus” (dai diciannove anni quaranta ai diciannove anni cinquanta). Fotografia di
-                Weegee / ICP / Getty
-                Stanno guardando l'Empire State.
-                "Stanno guardando l'Empire State" (1945). Fotografia di Weegee / ICP / Getty
-                Anche quando non è esplicitamente attivista, la posizione di Weegee rimane compassionevole. Giù sul
-                Bowery, Sammy - un'immersione impacciata frequentata da levrieri, cinture senza talento, una
-                mascotte nana e baraccopoli dei quartieri alti - era il posto che Weegee aveva scelto per le sue
-                feste di libro, da qualche parte in cui poteva restare a bocca aperta e mettersi in mostra. Il bar
-                era di per sé un espediente, una specie di servizio fotografico notturno, ma le foto che Weegee ha
-                scattato lì riescono ad essere sia sfruttatrici che umane.
 
-                Quanto era letteralmente vero e quanto messo in scena il lavoro di Weegee? In "Bystander",
-                Westerbeck e Meyerowitz mostrano che i primi fotografi di strada cercavano "di intimidire o sminuire
-                i loro soggetti affinché si comportassero in modo naturale". Questa tensione fondamentale tra un
-                pittoricismo composto e una "estetica istantanea" trouvé è persistita nella fotografia decennio dopo
-                decennio. Alfred Stieglitz, come se cercasse di negoziare un compromesso, a volte inquadrava un
-                allestimento e aspettava che i passanti vi si aggirassero; Brassaï ha orchestrato le sue fotografie;
-                in alcune occasioni Ben Shahn ha incluso sua moglie come un "soggetto falso" tra quelli reali.
+                <p>Anche quando non è esplicitamente attivista, la posizione di Weegee rimane compassionevole. Giù al
+                    Sammy's on
+                    the Bowery - una bettola malfamata frequentata da ubriaconi, da cantanti senza talento, da una
+                    mascotte nana e dai bassifondi dei quartieri alti - era il posto che Weegee sceglieva per i suoi
+                    book
+                    party, un posto dove poteva sia restare a bocca aperta che mettersi in mostra. Il bar era di per sé
+                    un
+                    espediente, una specie di set fotografico notturno, ma le foto che Weegee scattava riuscivano ad
+                    essere allo
+                    stesso tempo strumentali e umane.</p>
 
-                Bonanos ammette che Weegee a volte "darebbe alla verità un aiuto in più", e quando si tratta di
-                quelli che chiama "piccoli aggiustamenti" il biografo non monta un cavallo particolarmente alto.
-                Tuttavia, non nasconde le folle che equivalgono a false visualizzazioni. Il 22 novembre 1943, il più
-                eclatante imbroglio di Weegee produsse il suo film più famoso, "The Critic": una donna scontrosa e
-                impoverita guarda con disprezzo un paio di signore vestite di pelliccia e con indosso la tiara che
-                arrivano all'opera. Le donne in realtà si comportano in modo più naturale rispetto all'osservatore
-                sfortunato, una donna che Weegee ha trovato da Sammy e le ha bevuto qualcosa prima di portarla nei
-                quartieri alti per completare il suo piano. Quando ha ripubblicato le sue fotografie d'opera un paio
-                di anni dopo, il suo commento stampato non ha dato alcun accenno all'inganno.
+                <p>Quanto letteralmente vero, e quanto inscenato, era il lavoro di Weegee? In "Bystander", Westerbeck e
+                    Meyerowitz mostrano che i primi fotografi di strada cercavano "di intimidire o di convincere i loro
+                    soggetti a comportarsi naturalmente". Questa tensione fondamentale tra un pittorialismo composto e
+                    una
+                    trovata "estetica dell'istantanea" persisteva nella fotografia, decennio dopo decennio. Alfred
+                    Stieglitz, come se cercasse di trovare un compromesso, a volte inquadrava un ambiente e aspettava
+                    che
+                    i passanti vi vagassero dentro; Brassaï orchestrava le sue fotografie; a volte Ben Shahn includeva
+                    sua
+                    moglie come "falso soggetto" tra quelli reali.</p>
 
-                Il vigile del fuoco salva la Torah.
-                "Fireman Rescues Torahs" (metà degli anni Quaranta). Fotografia di Weegee / ICP / Getty
-                C'erano un sacco di occasioni in cui le circostanze si organizzavano senza bisogno di manipolazioni
-                - quelle che Weegee riconosceva per la loro improbabile bellezza organica e si sforzava di
-                catturarle prima che potessero scomparire dal suo mirino. "Extra! Weegee! " riproduce la sua
-                fotografia di un incendio in una chiesa sulla 122esima strada ovest, dove gli archi d'acqua creati
-                da diverse manichette sembrano archi rampanti, parti permanenti della struttura che sono appena
-                venuti a salvare. In una foto notturna, un uomo magro vicino a un lampione sembra una delle sculture
-                allungate di Giacometti. Uno sparo attraverso le porte aperte di un carro di risaia rivela due
-                uomini ai lati opposti della ruota di scorta del furgone, che si coprono il viso con i cappelli; il
-                risultato è un mistero comico e una sorta di silhouette di Topolino, in cui i loro cappelli sembrano
-                orecchie.
+                <p>Il 22 novembre 1943, l'imbroglio più eclatante di Weegee produsse la sua fotografia più famosa, "The
+                    Critic": una donna trasandata e povera guarda con disprezzo una coppia di signore vestite con
+                    pelliccia
+                    e
+                    con indosso un diadema che arrivano all'opera. Le signore si comportano in realtà in modo più
+                    naturale
+                    dell'osservatrice sfortunata, una donna che Weegee ha trovato da Sammy's on the Bowery e che ha
+                    riempito
+                    di drink
+                    prima di portarla in città per completare il suo piano. Quando ripubblicò le sue fotografie
+                    un paio d'anni dopo, il suo commento stampato non dava alcun accenno all'inganno.</p>
 
-                Questa attrazione per il bizzarro suggerisce che Weegee sia un precursore di fotografi come Diane
-                Arbus. In " On Photography " (1977), Susan Sontag riconosce che Arbus una volta si riferiva a Weegee
-                come "il fotografo a cui si sentiva più vicina", ma rifiutava qualsiasi connessione tra i due al di
-                là di una comune sensibilità urbana:
+                <p>C'erano molte occasioni in cui le circostanze si organizzavano da sole senza bisogno di
+                    manipolazione,
+                    occasioni che Weegee riconosceva per la loro improbabile e organica bellezza e che si preoccupava di
+                    catturare prima che potessero sparire dal suo mirino. "Extra! Weegee!" riproduce la sua fotografia
+                    di un
+                    incendio in una chiesa sulla 122a Strada Ovest, dove gli archi d'acqua fatti da diverse manichette
+                    sembrano essere archi volanti, parti permanenti della struttura. In
+                    un'immagine notturna, un uomo magro vicino a un lampione sembra una delle sculture allungate di
+                    Giacometti. Un'inquadratura attraverso le porte aperte di un furgone rivela due uomini ai lati
+                    opposti
+                    della ruota di scorta del furgone, che si coprono il volto con dei cappelli; il risultato è un
+                    mistero
+                    comico e una sorta di silhouette di Topolino, in cui i loro cappelli sembrano orecchie.</p>
 
-                Weegee the Famous the Voyeur and Exhibitionist
-                La somiglianza tra il lavoro [di Weegee] e quello di Arbus finisce qui. Per quanto desiderosa di
-                rinnegare elementi standard di raffinatezza fotografica come la composizione, Arbus non era per
-                nulla sofisticata. E non c'è niente di giornalistico nelle sue motivazioni per scattare foto. Ciò
-                che può sembrare giornalistico, persino clamoroso, nelle fotografie di Arbus le colloca, piuttosto,
-                nella tradizione principale dell'arte surrealista.
+                <p>Questa attrazione per il bizzarro suggerisce che Weegee sia un precursore di fotografi come Diane
+                    Arbus. In "On Photography" (1977), Susan Sontag riconosce che Arbus una volta si riferiva a Weegee
+                    come "il fotografo a cui si sentiva più vicina", ma rifiutava qualsiasi connessione tra i due al di
+                    là di una comune sensibilità urbana:</p>
 
-                Eppure difficilmente si può scartare o non notare l'essenza surrealista del ritratto di Weegee. Il
-                fedora simile a una maschera potrebbe anche essere la mela di Magritte. Weegee conosceva il
-                Surrealismo quando lo vedeva e il riconoscimento è venuto da un istinto artistico per la
-                giustapposizione provocatoria. Un'immagine del pubblico del circo del 1943 mostra due donne
-                impassibili e con il cappello che tengono in grembo bambole con il cappello: un'immagine che punta
-                dritto al lavoro di Arbus.
 
-                Coppia al Palace Theatre.
-                “Coppia al teatro del palazzo” (1943 circa). Fotografia di Weegee / ICP / Getty
-                Ho pianto quando ho scattato questa foto.
-                "Ho pianto quando ho scattato questa foto" (1939). Fotografia di Weegee / ICP / Getty
-                La pubblicazione di "Naked City", nel 1945, ha portato il pubblico elogio da Langston Hughes e una
-                nota di congratulazioni da Alfred Stieglitz: "La mia corona di alloro ti porgo". Se c'erano dei
-                critici che rimanevano scettici sullo status della fotografia come arte, adesso ce n'erano molti
-                pronti a far entrare nel pantheon questa creatura strisciante di carta da giornale. (Diversi Weegee
-                erano stati esposti in due spettacoli al moma nel 1943 e nel 1944.) Weegee non si arricchì , ma
-                desiderava più la fama che i soldi, e ne aveva abbastanza del primo per apparire in pubblicità per
-                attrezzature fotografiche.
+                <blockquote>La somiglianza tra il lavoro (di Weegee) e quello di Arbus finisce qui. Per quanto
+                    desiderosa di
+                    rinnegare elementi standard di raffinatezza fotografica come la composizione, Arbus non era per
+                    nulla sofisticata. E non c'è niente di giornalistico nelle sue motivazioni per scattare foto. Ciò
+                    che può sembrare giornalistico, persino clamoroso, nelle fotografie di Arbus le colloca, piuttosto,
+                    nella tradizione principale dell'arte surrealista.</blockquote>
 
-                Quando tutti questi consensi furono su di lui, Weegee aveva più o meno finito di fare il suo lavoro
-                più interessante. Ha sparato a una ragazza lanciata da un cannone, ma non era fatto per l'era
-                spaziale, per non parlare dell'era del rinnovamento urbano. L' art director di Vogue , Alexander
-                Liberman, lo ha portato alla rivista per un po ', ma non ne è venuto fuori molto, e i pezzi di
-                pubblicità e fotografia commerciale che ha intrapreso non ci coinvolgono ora più di quanto lo
-                facessero con lui all'epoca.
+                <p>Eppure non si può ignorare o non notare l'essenza surrealista dell'immagine del ritratto di Weegee.
+                    Il
+                    borsalino a forma di maschera potrebbe anche essere la mela di Magritte. Weegee conosceva il
+                    surrealismo
+                    quando lo vedeva, e il riconoscimento veniva da un istinto artistico per la giustapposizione
+                    provocatoria. Una foto di un pubblico di un circo del 1943 mostra impassibili due donne con il
+                    cappello che tengono
+                    in grembo bambole di scimmia con il cappello, un'immagine che punta dritto al lavoro della Arbus.
+                </p>
 
-                Fare un drink.
-                “Making a Drink” (circa diciannove-quaranta). Fotografia di Weegee / ICP / Getty
-                È stato un errore per Weegee entrare nel mondo aziendale ben illuminato. Il suo potere era sempre
-                derivato dal trasformare la notte in giorno. Con i flash, e anche il loro antecedente più rischioso,
-                con la polvere flash, era in grado di possedere e preservare l'istante in cui ... Fiat lux! ... fece
-                girare il mondo di centottanta gradi. Per una frazione di secondo, lo scrapper immigrato potrebbe
-                essere Dio, o, almeno, Lucifero. Il giorno reale rappresentava l'esilio, una retrocessione.
+                <p>La pubblicazione di "Naked City", nel 1945, portò le pubbliche lodi di Langston Hughes e una nota di
+                    congratulazioni di Alfred Stieglitz: "La mia corona d'alloro la consegno a te". Se c'erano critici
+                    che
+                    rimanevano scettici sullo status della fotografia come arte, ora ce n'erano molti pronti a portare
+                    questa creatura notturna della carta da giornale nel pantheon. (Diversi lavori di Weegee sono stati
+                    esposti in
+                    due mostre al MOMA nel 1943 e 1944.) Weegee non diventò ricco, ma bramava la fama più del denaro, e
+                    ne
+                    aveva abbastanza per apparire nelle pubblicità di attrezzature fotografiche.</p>
 
-                La voglia di rimanere Weegee the Famous lo portò a Hollywood. Mark Hellinger, l'editorialista
-                diventato produttore, alla ricerca di un nome sexy per un film poliziesco, aveva acquistato i
-                diritti per il titolo "Naked City" e ha girato il film a New York. Questo era un po 'come l'ufficio
-                di Cecil B. DeMille che desiderava l'auto di Norma Desmond invece di Norma Desmond, ma l'esperienza
-                di essere in giro per la produzione spinse Weegee, nel 1948, a spostare le coste, dove sprecò alcuni
-                anni a caccia di pezzi nei film. L'unico lavoro significativo di questo periodo fu una serie di
-                fotografie promozionali notturne scattate in tutto il paese per un film della Universal del 1950,
-                "The Sleeping City".
+                <p>Nel momento in cui tutta questa acclamazione era su di lui, Weegee aveva più o meno finito di fare il
+                    suo lavoro più interessante. Ha fotografato una ragazza che viene lanciata da un cannone, ma non era
+                    fatto per l'era spaziale, tanto meno per l'era del rinnovamento urbano. L'art director di Vogue,
+                    Alexander Liberman, lo portò alla rivista per un certo periodo, ma non ne venne fuori molto, e i
+                    pezzi
+                    di fotografia pubblicitaria e commerciale che intraprese non ci coinvolgono oggi più di quanto lo
+                    facessero all'epoca.</p>
 
-                Il critico.
-                "The Critic" (1943). Fotografia di Weegee / ICP / Getty
-                Weegee era tornato a New York alla fine del 1951 e trascorse gran parte del decennio successivo
-                facendo incursioni inutili in Europa, film d'autore e soft porn. Ha fotografato i membri dei club di
-                macchina fotografica che guardavano Bettie Page, la regina delle pinup, e ha cercato un contatto con
-                una folla artistica più giovane nel Greenwich Village. Una volta ha invitato Judith Malina, la
-                co-fondatrice del Living Theatre, a casa, poi l'ha inseguita per il suo appartamento. Ha ricordato
-                Weegee per Bonanos poco prima della sua morte: “Voleva vedere l'anima della persona. Voleva vedere
-                l'essenza della persona. E di certo voleva vedere le tette della persona. "
+                <p>È stato un errore per Weegee entrare nel mondo aziendale ben illuminato. Il suo potere era sempre
+                    stato
+                    quello di trasformare la notte in giorno. Con i flash, e anche con il loro più rischioso antecedente
+                    di
+                    polvere da sparo, era in grado di possedere e preservare l'istante in cui - Fiat Lux - faceva girare
+                    il
+                    mondo di centottanta gradi. Per una frazione di secondo, il rottamatore immigrato poteva essere Dio
+                    o,
+                    almeno, Lucifero. Il giorno effettivo rappresentava l'esilio, una retrocessione.</p>
 
-                Durante i suoi ultimi anni, Weegee ha dedicato una quantità sconcertante di tempo alle
-                "distorsioni", caricature di personaggi famosi come Salvador Dalì e Marilyn Monroe. Sono
-                interessanti per un secondo o due, ma i rottami di automobili che aveva fotografato anni prima -
-                veicoli polverizzati e fisarmonici - erano più autentici, accattivanti. Quello che considerava un
-                ritardo creativo era in realtà il restringimento; verso la fine, ha smesso di fare molte distinzioni
-                tra arte e spazzatura. Per rallentare la deriva, ha provato vecchi trucchi, a un certo punto ha
-                persino comprato un altro pony, un sostituto per Hypo da tempo morto. Un tentativo di ritorno alla
-                fotografia notturna di notizie si è rivelato al di là delle sue energie fisiche.
+                <p>Il desiderio di rimanere Weegee il Famoso lo portò a Hollywood. Mark Hellinger, l'editorialista
+                    diventato produttore, alla ricerca di un nome sexy per un film poliziesco, aveva comprato i diritti
+                    del
+                    titolo "Naked City" e girato il film a New York. Era un po' come se l'ufficio di Cecil B. DeMille
+                    volesse l'auto di Norma Desmond invece di Norma Desmond, ma l'esperienza di essere intorno alla
+                    produzione spinse Weegee, nel 1948, a cambiare costa, dove sprecò alcuni anni a caccia di piccole
+                    parti
+                    nei film. L'unico lavoro significativo di questo periodo fu una serie di fotografie promozionali
+                    notturne scattate in tutto il paese per un film Universal del 1950, "The Sleeping City".</p>
 
-                Coppia in Voodoo Trance.
-                "Couple in Voodoo Trance" (circa 1956). Fotografia di Weegee / ICP / Getty
-                In mezzo alla noiosa vanagloria delle memorie di Weegee, non si trova alcuna menzione né di Margaret
-                Atwood né di Wilma Wilcox, ma quest'ultimo fece un ritorno a Weegee mandato da Dio alla fine della
-                sua vita. Decenni prima, Wilcox era rimasto scioccato dai suoi metodi di archiviazione: "fotografie
-                non archiviate ma gettate in una botte di maiale". Nel 1964, con i soldi della pensione, acquistò
-                un'arenaria nella Quarantasettesima Strada Ovest e permise a Weegee e alla sua opera di trasferirsi.
 
-                Morì per un tumore al cervello a Natale nel 1968, e Wilcox, "l'eroe silenzioso della storia di
-                Weegee", secondo Bonanos, iniziò a organizzare il disordine selvaggio del suo lavoro sovrabbondante
-                e irregolare. Ha vissuto fino al 1993, forse con una premonizione dell'era della fotografia ormai
-                alle porte, un'epoca in cui quella ragazza sorridente sulla spiaggia non ha bisogno di un
-                fotoreporter per farsi notare; ci viene incontro tramite il suo feed Instagram, come un selfie dal
-                quale è stato probabilmente ritagliato l'uomo che sta annegando. Sfidando uno dei dicta di Weegee:
-                “Un'immagine è come un blintz. Mangiatelo finché è caldo ": Wilcox è riuscito a portare il risultato
-                della sua vita disordinata nel Centro Internazionale di Fotografia, che oggi lo tiene in" circa
-                cinquecento grandi scatole grigie d'archivio tenute al fresco e all'asciutto ".
+                <p>Weegee tornò a New York alla fine del 1951 e trascorse gran parte del decennio successivo facendo
+                    inutili incursioni in Europa, film d'autore e porno soft. Fotografò i membri dei club di fotocamere
+                    che
+                    guardavano Bettie Page, la regina delle pin up, e cercò un contatto con una folla artistica più
+                    giovane
+                    nel Greenwich Village. Una volta invitò a casa Judith Malina, la cofondatrice del Living Theatre, e
+                    poi
+                    la inseguì nel suo appartamento. Lei ha ricordato Weegee per Bonanos poco prima della sua morte:
+                    "Voleva
+                    vedere l'anima della persona. Voleva vedere l'essenza della persona. E certamente voleva vedere le
+                    tette
+                    della persona".</p>
+
+                <p>Durante i suoi ultimi anni, Weegee ha dedicato una quantità sconcertante di tempo alle
+                    "distorsioni", caricature di personaggi famosi come Salvador Dalì e Marilyn Monroe. Sono
+                    interessanti per un secondo o due, ma i rottami di automobili che aveva fotografato anni prima -
+                    veicoli polverizzati e fisarmonici - erano più autentici, accattivanti. Quello che considerava un
+                    ritardo creativo era in realtà un restringimento; verso la fine, ha smesso di fare molte distinzioni
+                    tra arte e spazzatura. Per rallentare la deriva, provò vecchi trucchi, a un certo punto ha
+                    persino comprato un altro pony, un sostituto di Hypo da tempo morto. Un tentativo di tornare alla
+                    fotografia di cronaca notturna si rivelò al di là delle sue energie fisiche.</p>
+
+                <p>In mezzo alla noiosa spacconeria delle memorie di Weegee, non si trova alcuna menzione né di Margaret
+                    Atwood né di Wilma Wilcox, ma quest'ultima fece ritorno da Weegee alla fine della sua vita.
+                    Decenni prima, Wilcox era rimasta scioccata dai suoi metodi di archiviazione - "fotografie non in
+                    file
+                    ma gettate in un barile di maiale". Nel 1964, con i soldi della sua pensione, acquistò una casa a
+                    schiera sulla
+                    West Forty-seventh Street e permise a Weegee, e alle sue opere, di trasferirvisi.</p>
+
+                <pp>Morì per un tumore al cervello nel periodo natalizio del 1968, e Wilcox si mise a organizzare il
+                    disordine selvaggio del suo lavoro sovrabbondante e irregolare. È vissuta fino al 1993, forse con
+                    una
+                    premonizione dell'era fotografica che stava arrivando, un'era in cui quella ragazza sorridente sulla
+                    spiaggia non ha bisogno di un fotografo della stampa per farsi notare; arriva a noi attraverso il
+                    suo
+                    feed di Instagram, come un selfie da cui l'uomo che annega è stato probabilmente ritagliato.
+                    Sfidando
+                    uno dei detti di Weegee - "Una foto è come un blintz. Mangiala finché è calda" - Wilcox è riuscita a
+                    far
+                    entrare il risultato disordinato della vita di Weegee nell'International Center of Photography, che
+                    oggi
+                    lo conserva in "circa cinquecento grandi scatole d'archivio grigie tenute al fresco e all'asciutto".
+                </pp>
             </article>
         </div>
         <a class="gotopbtn" href="#"><i class="fas fa-chevron-up"></i></a>

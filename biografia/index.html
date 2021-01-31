@@ -8,151 +8,15 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c7b072493.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../biografia/style.css">
+
     <title>Weegee Biography</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Bodoni Moda', serif;
-
-        }
-
-        .col-md {
-            /* border: 1px solid red; */
-            text-align: justify;
-        }
-
-        /* Scrollbar Hidden*/
-        ::-webkit-scrollbar {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        /* Bottone per tornare su */
-
-
-        .gotopbtn {
-            display: none;
-            position: fixed;
-            width: 50px;
-            height: 50px;
-            background-color: #dfe6e9;
-            bottom: 40px;
-            right: 50px;
-            text-decoration: none;
-            text-align: center;
-            line-height: 50px;
-            color: white;
-            font-size: 22px;
-            border-radius: 50%;
-        }
-
-
-
-        .gotopbtn:hover {
-            color: #bdc3c7;
-        }
-
-        /* Fine bottone */
-
-        .container__header {
-            height: 20rem;
-            /* border: 1px solid red; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container__header h1:after {
-            content: "";
-            display: block;
-            border-bottom: 1px solid rgb(140, 140, 140);
-            width: 3rem;
-            margin: auto;
-            padding-top: 0.5rem;
-        }
-
-        .header__info {
-            font-size: 2.5rem;
-            padding: 1.875rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            line-height: 3rem;
-        }
-
-        .header__img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .has-dropcap {
-            padding: 0 2.5rem;
-        }
-
-        .has-dropcap:first-letter {
-            float: left;
-            font-size: 6rem;
-            line-height: 0.65;
-            margin: 0.1em 0.1em 0.2em 0;
-        }
-
-        .header__img--artist {
-            max-width: 100%;
-        }
-
-
-
-        /* INIZIO Position Indicator */
-
-        progress {
-            /* Positioning */
-            position: fixed;
-            left: 0;
-            top: 0;
-
-            /* Dimensions */
-            width: 100%;
-            height: 5px;
-
-            /* Reset the appearance */
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-
-            /* Get rid of the default border in Firefox/Opera. */
-            border: none;
-
-            /* Progress bar container for Firefox/IE10+ */
-            background-color: transparent;
-
-            /* Progress bar value for IE10+ */
-            color: #bdc3c7;
-        }
-
-        progress::-webkit-progress-bar {
-            background-color: transparent;
-        }
-
-        progress::-webkit-progress-value {
-            background-color: #bdc3c7;
-        }
-
-        progress::-moz-progress-bar {
-            background-color: #bdc3c7;
-        }
-
-        /* FINE Position Indicator */
-    </style>
 </head>
 
 <body>
@@ -182,7 +46,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container container__bio">
             <div class="row">
                 <div class="col-md header__img">
                     <img src="../img/Weegee/weegee-biography.jpg" alt="Ascher Fellig" class="header__img--artist">
@@ -406,27 +270,31 @@
 
 
                 <p>
-                    A Weegee piaceva dire che stava cercando <blockquote>
-                        "una ragazza con un corpo sano e una mente malata"
-                    </blockquote> Le due
-                    donne più importanti della sua vita erano delle candidate improbabili per una relazione duratura.
-                    Per tutto l'inizio e la metà degli anni Quaranta, Wilma Wilcox, una ragazza del Sud Dakota che
-                    studiava
-                    per un master in assistenza sociale alla Columbia, fornì a Weegee la compagnia non appiccicosa che
-                    desiderava. Nel 1947 sposò una donna
-                    di nome Margaret Atwood, una prospera vedova che aveva incontrato alla firma di un libro per
-                    "Weegee's
-                    People", un seguito di "Naked City". Il matrimonio è durato alcuni anni. Successivamente Weegee ha
-                    impegnato la sua fede nuziale invece di divorziare.</p>
+                    A Weegee piaceva dire che stava cercando
+                <blockquote>
+                    "una ragazza con un corpo sano e una mente malata"
+                </blockquote> Le due
+                donne più importanti della sua vita erano delle candidate improbabili per una relazione duratura.
+                Per tutto l'inizio e la metà degli anni Quaranta, Wilma Wilcox, una ragazza del Sud Dakota che
+                studiava
+                per un master in assistenza sociale alla Columbia, fornì a Weegee la compagnia non appiccicosa che
+                desiderava. Nel 1947 sposò una donna
+                di nome Margaret Atwood, una prospera vedova che aveva incontrato alla firma di un libro per
+                "Weegee's
+                People", un seguito di "Naked City". Il matrimonio è durato alcuni anni. Successivamente Weegee ha
+                impegnato la sua fede nuziale invece di divorziare.</p>
 
-                <p>La dinamica voyeur-esibizionista raggiunse il suo apice quando Weegee si mise ad "osservare gli osservatori", un
+                <p>La dinamica voyeur-esibizionista raggiunse il suo apice quando Weegee si mise ad "osservare gli
+                    osservatori", un
                     interesse che cresceva nel tempo. Le sue foto di persone
                     che osservano crimini, incidenti e persino spettacoli felici hanno esteso quella che Westerbeck e
                     Meyerowitz vedono come la lunga tradizione della fotografia di strada di commemorare la folla invece
                     che la parata. Nel 2007, la Corte Suprema dello Stato di New York ha affermato il diritto del
                     fotografo di strada di scattare foto di persone in pubblico, cosa che però non aveva mai preoccupato
-                    Weegee. <blockquote>"Le persone povere non sono esigenti riguardo alla privacy, hanno altri
-                    problemi."</blockquote></p>
+                    Weegee.
+                <blockquote>"Le persone povere non sono esigenti riguardo alla privacy, hanno altri
+                    problemi."</blockquote>
+                </p>
 
                 <p>Weegee ha realizzato tre delle sue più grandi vedute di spettatori tra il 1939 e il 1941. Il primo
                     di loro mostra persone ordinatamente disposte nelle finestre di un condominio di Prince Street, che

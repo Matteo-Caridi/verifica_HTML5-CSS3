@@ -44,6 +44,11 @@ html {
 
 /* CSS autore */
 
+.author__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
 .author__info {
     padding: 2rem;
 }
@@ -55,14 +60,8 @@ html {
 }
 
 .author__img img {
-    
     width: 250px;
     height: 300px;
-}
-
-.author__title {
-    font-style: italic;
-    padding-bottom: 2rem;
 }
 
 /* CSS struttura */
@@ -95,7 +94,7 @@ html {
 }
 
 .stylistic__img img {
-    padding-left:2rem;
+    padding-left: 2rem;
     width: 300px;
     height: 300px;
 }
@@ -188,8 +187,28 @@ html {
 /* Media Query */
 
 @media (max-width: 576px) {
+    .container .col-md {
+        padding: 0;
+    }
+    .author__title {
+        padding-top:3rem;
+        text-align: center;
+    }
+    .author__info {
+        padding: 0 0 2.5 0;
+    }
+    .structure__title {
+        text-align: center;
+    }
+    .structure__info {
+        padding: 0 0 2.5 0;
+    }
     .structure__img img {
         display: none;
+    }
+    .stylistic__title {
+        text-align: center;
+        padding: 0 0 2.5 0;
     }
     .stylistic__img img {
         display: none;
@@ -201,6 +220,4 @@ html {
         z-index: 1;
     }
     /* Immagine viewport */
- 
-    
 }

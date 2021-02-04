@@ -1,4 +1,4 @@
-// Button up
+// Botton up
 
 $(document).scroll(function () {
     var y = $(this).scrollTop();

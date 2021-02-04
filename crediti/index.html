@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c7b072493.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../crediti/style.css">
+
+    <title>Weegee - Credits</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../home/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../galleria/index.html" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../biografia/index.html" class="nav-link">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Credits</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="col-md header">
+            <img src="../img/crediti/kids waiting for autographs.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <section class="container">
+            <div class="container__header">
+                <h1>Credits</h1>
+            </div>
+            <div class="col-md">
+                <div class="row align-items-center">
+                    <div class="col author">
+                        <div class="author__title">
+                            <h1>Author</h1>
+                        </div>
+                        <div class="author__info">
+                            <p>Matteo Caridi,
+                                nato a Torino, il 12/11/1992.
+                                Laureato alla facoltà di Economia di Torino, specializzato come Tecnico di Reverse
+                                Engineering e
+                                attuale
+                                studente del corso di Tecnico Sviluppo Software 2020/21.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col author__img">
+                        <img src="../img/crediti/foto-black&white.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+            <a class="gotopbtn" href="#"><i class="fas fa-chevron-up"></i></a>
+            <div class="col-md">
+                <div class="row align-items-center">
+                    <div class="structure__img">
+                        <img src="../img/crediti/weegee.jpg" alt="img">
+                    </div>
+                    <div class="col structure">
+                        <div class="structure__title">
+                            <h1>Website Structure</h1>
+                        </div>
+                        <div class="structure__info">
+                            <p>Per la struttura del sito ho scelto di utilizzare Bootstrap per una questione
+                                di praticità e facilità d'uso, oltre al fatto di esser stato oggetto di studi durante il
+                                modulo
+                                di
+                                HTML5 e CSS3.
+                            </p>
+                            <p>La struttura del sito web è piuttosto semplice, scomponendosi in sole quattro pagine:
+                                Home, Gallery, Biography ed infine i Credits.
+                            </p>
+                            <p>
+                                La creazione della home page ha richiesto, oltre che de la navbar per la
+                                navigazione del sito che si ripeterà in tutte le altre pagine, un semplice Grid System
+                                reperibile sul sito di Bootstrap.
+                            </p>
+                            <p>
+                                La galleria invece, seppur articolata, è composta da un Carousel che occupa, al di
+                                sotto della navbar, tutto il viewport ed è composto da frecce di navigazione, una
+                                piccola
+                                descrizione della fotografia e da piccoli indicatori che consentono di spostarsi con
+                                facilità.
+                                Al di sotto, troviamo la Gallery vera e propria, composta da un primo "div" che funge
+                                da separatore tra il Carousel e le fotografie e sotto ancora troviamo i due temi
+                                principali.
+                                La scelta di non creare due pagine distinte per ognuno dei temi deriva dal fatto di non
+                                aver
+                                voluto
+                                scomporre troppo l'argomento mantenendo tutto all'interno di una sola pagina.
+                                Inoltre, la visualizzazione delle singole fotografie viene fatta tramite l'impiego del
+                                Lightbox,
+                                fornendo anche un piccolo titolo per ciascuno di esse.
+
+                            </p>
+                            <p>Le fotografie sono state raccolte tramite l'utilizzo di una semplice struttura formata
+                                da un container con all'interno delle colonne dove ho riposto delle Card fornite da
+                                Bootstrap e
+                                attraverso l'intreccio di queste Card mi è stato possibile creare una sorta di trama
+                                formata
+                                da tre fotografie per la prima riga e quattro fotografie per la seconda.</p>
+
+                            <p>Passando alla pagina della biografia ho scelto di riutilizzare la stessa struttura vista
+                                nella
+                                home page con l'aggiunta di un Grid System per la visualizzazione dell'intestazione
+                                della
+                                pagina
+                                e della lunga biografia.
+                            </p>
+
+                            <p>Per la pagina dei crediti ho scelto di rappresentare il tutto come già visto nelle
+                                precedenti pagine, per comodità e per mantere lo stesso layout non snaturando
+                                l'ordine e la visualizzazione degli elementi. </p>
+
+                            <p>Con riferimento al bottone per tornare a inizio pagina, presente sia
+                                nella Gallery e che nella Biography, e alla barra di avanzamento della lettura, sono
+                                stati inseriti successivamente alla ricerca e lettura delle info necessearie
+                                al solo scopo di rendere più semplice la navigazione.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="row align-items-center">
+
+                    <div class="col stylistic">
+                        <div class="stylistic__title">
+                            <h1>Stylistic choices</h1>
+                        </div>
+                        <div class="stylistic__info">
+                            <p>Lo stile che ho voluto utilizzare per l'intero sito riguarda principalmente
+                                i colori utilizzati per il background e il testo, così come anche i font che sono
+                                principalmente due, Playfair Display e Bodoni Moda rispettivamente per le intestazioni
+                                e per i paragrafi.
+                                Ho scelto di utilizzare prevalentemente dei colori tra il bianco e il nero per
+                                supportare
+                                le fotografie quasi totalmente di queste tonalità.
+                            </p>
+                            <p>La scelta dei temi è ricaduta inevitabilmente su "Street" e "Photojournalism",
+                                considerando
+                                la natura dell'artista. Infatti, come indicato inoltre nella sua biografia, Weegee
+                                ha dedicato quasi tutta la sua vita a fotografare persone, sia vive che non. Per questa
+                                ragione
+                                ho messo in risalto due temi così opposti ma comunque collegati.
+                                Il secondo tema è considerato così caratteristico per l'artista che non inserirlo
+                                sarebbe stato uno sfregio nei suoi confronti. </p>
+
+                            <p>Il fatto di aver preferito la lingua inglese per le intestazioni risiede nell'idea di
+                                voler
+                                conservare le origini dell'artista mentre per quanto riguarda i titoli delle fotografie
+                                presenti
+                                nel Lightbox si è trattato di mantenere l'originalità delle fotografie, senza darne una
+                                traduzione
+                                non esatta.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stylistic__img">
+                        <img src="../img/crediti/halloween-Weegee18_.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="row">
+
+                    <div class="col conclusions">
+                        <div class="conclusions__title">
+                            <h1>Conclusions</h1>
+                        </div>
+                        <div class="conclusions__info">
+                            <p>Questo progetto ha rappresentato un'ottima opportunità, non solo per conoscere
+                                un'artista a me sconosciuto ma soprattutto per mettere a frutto tutto ciò
+                                che ho appreso da questo modulo.
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>© Copyright 2021 - All Rights Reserved - Design by Matteo Caridi </small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../crediti/my.js"></script>
+</body>
+
+</html>

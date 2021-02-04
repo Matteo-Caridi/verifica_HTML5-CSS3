@@ -16,6 +16,7 @@ body h2 {
 }
 
 /* Scrollbar Hidden*/
+
 ::-webkit-scrollbar {
     width: 100%;
     height: 100%;
@@ -23,7 +24,6 @@ body h2 {
 }
 
 /* Bottone per tornare su */
-
 
 .gotopbtn {
     display: none;
@@ -48,13 +48,13 @@ body h2 {
 /* Ombra testo Carousel */
 
 .carousel-inner {
-    text-shadow: 2px 2px 4px #777,
-        -2px -2px 4px #777;
+    text-shadow: 2px 2px 4px #777, -2px -2px 4px #777;
 }
 
 /* CAROUSEL */
+
 .carousel-item {
-    height: 41.5rem;
+    height: 41.75rem;
     background: #000;
     color: white;
     position: relative;
@@ -62,30 +62,21 @@ body h2 {
     background-size: cover;
 }
 
-
-.overlay-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-}
-
 .carousel-inner img {
     width: 100%;
 }
 
 @media (max-width: 576px) {
-    .carousel-item .active {
+    .carousel-item {
         height: 100%;
         background: black;
         color: white;
         position: relative;
         background-position: center;
         background-size: cover;
+    }
+    .gotopbtn {
+        z-index: 10;
     }
 }
 
@@ -134,6 +125,7 @@ body h2 {
 }
 
 /* CONTAINER TEMA 1*/
+
 .container__header--theme-one {
     font-style: italic;
     display: flex;
@@ -153,8 +145,8 @@ body h2 {
     padding-top: 0.5rem;
 }
 
-
 /* CONTAINER TEMA 2 */
+
 .container__header--theme-two {
     font-style: italic;
     display: flex;
@@ -189,6 +181,7 @@ body h2 {
 }
 
 /* OMBRA COLONNE */
+
 .col-md:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.20), 0 5px 15px rgba(0, 0, 0, 0.20);
     z-index: 100;

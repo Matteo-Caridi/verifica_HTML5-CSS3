@@ -1,0 +1,204 @@
+/* Scrollbar Hidden*/
+
+::-webkit-scrollbar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Font e stile sito */
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #EDEEF1;
+}
+
+body h1 {
+    font-size: 3.5rem;
+}
+
+body p {
+    font-family: 'Bodoni Moda', serif;
+    text-align: justify;
+}
+
+.container {
+    /* border: 1px solid red; */
+}
+
+.col {
+    /* border: 1px solid blue; */
+}
+
+.col-md {
+    /* border: 1px solid black; */
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fine */
+
+/* CSS autore */
+
+.author__info {
+    padding: 2rem;
+}
+
+.author__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author__img img {
+    width: 250px;
+    height: 300px;
+}
+
+.author__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+/* CSS struttura */
+
+.structure__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.structure__info {
+    padding: 2rem;
+}
+
+.structure__img img {
+    width: 350px;
+    height: 350px;
+}
+
+/* CSS stile */
+
+.stylistic__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.stylistic__info {
+    padding: 2rem;
+}
+
+.stylistic__img img {
+    width: 350px;
+    height: 350px;
+}
+
+/* CSS conclusioni */
+
+.conclusions__info {
+    padding: 2rem;
+}
+
+.conclusions__title {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.conclusions__title:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    width: 4rem;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+
+/* CONTAINER CREDITS */
+
+.container__header {
+    font-style: italic;
+    height: 20rem;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DECORAZIONE INTESTAZIONE CREDITS */
+
+.container__header h1:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    width: 3rem;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+
+.container .col-md {
+    padding-bottom: 7rem;
+    padding: 4rem;
+}
+
+/* IMMAGINE VIEWPORT */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+}
+
+.header img {
+    width: 100%;
+}
+
+/* Bottone per tornare su */
+
+.gotopbtn {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #dfe6e9;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ecf0f1;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.gotopbtn:hover {
+    color: #bdc3c7;
+}
+
+/* Media Query */
+
+@media (max-width: 576px) {
+    .structure__img img {
+        display: none;
+    }
+    .stylistic__img img {
+        display: none;
+    }
+    .container__header {
+        height: 15rem;
+    }
+    .gotopbtn {
+        z-index: 1;
+    }
+    /* Immagine viewport */
+ 
+    .header img {
+        height: 300px;
+    }
+}

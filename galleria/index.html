@@ -41,20 +41,20 @@
                             <a href="../biografia/index.html" class="nav-link">Biography</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Credits</a>
+                            <a href="../crediti/index.html" class="nav-link">Credits</a>
                         </li>
                     </ul>
                 </div>
         </nav>
     </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -94,11 +94,11 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -626,21 +626,12 @@
     <script src="../biografia/my.js"></script>
 
     <script>
-        lightbox.option({
-            'resizeDuration': 600,
-            'wrapAround': true,
-            'showImageNumberLabel': false,
-            'disableScrolling': true,
-        });
-
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 200) {
-                $('.gotopbtn').fadeIn();
-            } else {
-                $('.gotopbtn').fadeOut();
-            }
-        });
+       lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'showImageNumberLabel': false,
+        'disableScrolling': true,
+    });
 
     </script>
 

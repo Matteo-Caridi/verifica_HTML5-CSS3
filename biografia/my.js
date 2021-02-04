@@ -1,3 +1,4 @@
+// Botton Up
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 200) {
@@ -7,7 +8,7 @@ $(document).scroll(function() {
     }
     });
 
-
+// Progress Bar
     $(document).ready(function() {
     
         var getMax = function(){

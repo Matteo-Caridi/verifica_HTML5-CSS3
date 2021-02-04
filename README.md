@@ -10,4 +10,4 @@
 - [x] **task3.3 inserimento grid per card**
 - [x] **task4 Creazione pagina Biografia**
 
-- [ ] **task5 Creazione pagina Credits**
+- [x] **task5 Creazione pagina Credits**

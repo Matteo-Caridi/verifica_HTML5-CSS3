@@ -1,8 +1,10 @@
-$(document).scroll(function() {
+// Button up
+
+$(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 200) {
-    $('.gotopbtn').fadeIn();
+        $('.gotopbtn').fadeIn();
     } else {
-     $('.gotopbtn').fadeOut();
+        $('.gotopbtn').fadeOut();
     }
-    });
+});

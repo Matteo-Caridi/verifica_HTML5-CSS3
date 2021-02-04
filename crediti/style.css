@@ -199,6 +199,7 @@ html {
     }
     .structure__title {
         text-align: center;
+        padding-top: 2rem;
     }
     .structure__info {
         padding: 0 0 2.5 0;
@@ -208,13 +209,14 @@ html {
     }
     .stylistic__title {
         text-align: center;
-        padding: 0 0 2.5 0;
+        padding: 3rem 0 3rem 0;
     }
     .stylistic__img img {
         display: none;
     }
 
     .conclusions__title{
+        padding: 3rem 0 3rem 0;
         text-align: center;
     }
     .container__header {

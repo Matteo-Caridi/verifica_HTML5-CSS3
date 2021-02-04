@@ -10,12 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    
+
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/0c7b072493.js" crossorigin="anonymous"></script>
-    
+
     <!-- Aggiunto css lightbox -->
     <link href="../lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="./my.js"></script>
 
     <title>Weegee - Gallery</title>
 
@@ -29,6 +30,13 @@
             background-color: #EDEEF1;
         }
 
+        body h1 {
+            font-size: 4rem;
+        }
+
+        body h2 {
+            font-size: 3rem;
+        }
 
         /* Scrollbar Hidden*/
         ::-webkit-scrollbar {
@@ -129,6 +137,7 @@
         /* CONTAINER GALLERY */
 
         .container__header {
+            font-style: italic;
             height: 20rem;
             /* border: 1px solid red; */
             display: flex;
@@ -143,6 +152,47 @@
             display: block;
             border-bottom: 1px solid rgb(140, 140, 140);
             width: 3rem;
+            margin: auto;
+            padding-top: 0.5rem;
+        }
+
+        /* CONTAINER TEMA 1*/
+        .container__header--theme-one {
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+        }
+
+        /* DECORAZIONE INTESTAZIONE TEMA 1 */
+
+        .container__header--theme-one h2:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid rgb(140, 140, 140);
+            width: 2rem;
+            margin: auto;
+            padding-top: 0.5rem;
+        }
+
+
+        /* CONTAINER TEMA 2 */
+        .container__header--theme-two {
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20rem;
+        }
+
+        /* DECORAZIONE INTESTAZIONE TEMA 2 */
+
+        .container__header--theme-two h2:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid rgb(140, 140, 140);
+            width: 2rem;
             margin: auto;
             padding-top: 0.5rem;
         }
@@ -259,36 +309,40 @@
         </div>
         <section class="container">
             <div class="container__header">
-                <i>
-                    <h1>Gallery</h1>
-                </i>
+                <h1>Gallery</h1>
             </div>
 
+            <div class="container__header--theme-one">
+                <h2>Street</h2>
+            </div>
+
+            <!-- Primo container -->
             <div class="container">
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/bellanapoli.jpeg" data-lightbox="grid"
+                            <a href="../img/Gallery/grid/street/bellanapoli.jpeg" data-lightbox="grid"
                                 data-title="Caffé Bella Napoli, Mulberry Street <br>July 1944">
-                                <img class="card-img-top" src="../img/Gallery/grid/bellanapoli.jpeg"
+                                <img class="card-img-top" src="../img/Gallery/grid/street/bellanapoli.jpeg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/baby.jpg" data-lightbox="grid" data-title="Baby">
-                                <img class="card-img-top" src="../img/Gallery/grid/baby.jpg" alt="Card image cap">
+                            <a href="../img/Gallery/grid/street/baby.jpg" data-lightbox="grid" data-title="Baby">
+                                <img class="card-img-top" src="../img/Gallery/grid/street/baby.jpg"
+                                    alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
+                            <a href="../img/Gallery/grid/street/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
                                 data-lightbox="grid"
                                 data-title="New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
+                                    src="../img/Gallery/grid/street/New York, largest Italian city in the world, yesterday celebrated the entry of U.S. troops into Rome.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -298,39 +352,41 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/bentower.jpg" data-lightbox="grid" data-title="Ben Tower">
-                                <img class="card-img-top" src="../img/Gallery/grid/bentower.jpg" alt="Card image cap">
+                            <a href="../img/Gallery/grid/street/bentower.jpg" data-lightbox="grid"
+                                data-title="Ben Tower">
+                                <img class="card-img-top" src="../img/Gallery/grid/street/bentower.jpg"
+                                    alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
+                            <a href="../img/Gallery/grid/street/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
                                 data-lightbox="grid"
                                 data-title="Children playing in water sprayed from open fire hydrant <br> Upper West Side, New York">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
+                                    src="../img/Gallery/grid/street/Children playing in water sprayed from open fire hydrant, Upper West Side, New York.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
+                            <a href="../img/Gallery/grid/street/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
                                 data-lightbox="grid"
                                 data-title="Franklin D. Roosevelt on an open-car tour of New York City">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
+                                    src="../img/Gallery/grid/street/Franklin D. Roosevelt on an open-car tour of New York City.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Afternoon crowd at Coney Island, Brooklyn.jpg"
+                            <a href="../img/Gallery/grid/street/Afternoon crowd at Coney Island, Brooklyn.jpg"
                                 data-lightbox="grid" data-title="Afternoon crowd at Coney Island, Brooklyn">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Afternoon crowd at Coney Island, Brooklyn.jpg"
+                                    src="../img/Gallery/grid/street/Afternoon crowd at Coney Island, Brooklyn.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -343,31 +399,32 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Simply Add Boiling Water, New York, December 18, 1943.jpg"
+                            <a href="../img/Gallery/grid/street/Simply Add Boiling Water, New York, December 18, 1943.jpg"
                                 data-lightbox="grid"
                                 data-title="Simply Add Boiling Water <br> New York, December 18, 1943">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Simply Add Boiling Water, New York, December 18, 1943.jpg"
+                                    src="../img/Gallery/grid/street/Simply Add Boiling Water, New York, December 18, 1943.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Boy meets girl - from Mars.jpg" data-lightbox="grid"
+                            <a href="../img/Gallery/grid/street/Boy meets girl - from Mars.jpg" data-lightbox="grid"
                                 data-title="Boy meets girl - from Mars">
-                                <img class="card-img-top" src="../img/Gallery/grid/Boy meets girl - from Mars.jpg"
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/street/Boy meets girl - from Mars.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
+                            <a href="../img/Gallery/grid/street/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
                                 data-lightbox="grid"
                                 data-title="Tenement sleeping during heat spell' Lower East Side <br> New York, May 22, 1941">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
+                                    src="../img/Gallery/grid/street/Tenement sleeping during heat spell' Lower East Side, New York, May 22, 1941.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -377,41 +434,41 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
+                            <a href="../img/Gallery/grid/street/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
                                 data-lightbox="grid" data-title="Kids Gawk at Car-Wreck Site; Observer Unimpressed">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
+                                    src="../img/Gallery/grid/street/Kids Gawk at Car-Wreck Site; Observer Unimpressed.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
+                            <a href="../img/Gallery/grid/street/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
                                 data-lightbox="grid"
                                 data-title="Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York, January 26, 1942">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
+                                    src="../img/Gallery/grid/street/Charles Sodokoff and Arthur Webber using their top hats to hide their faces, New York], January 26, 1942.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
+                            <a href="../img/Gallery/grid/street/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
                                 data-lightbox="grid" data-title="‘Time Is Short’ in Broome Street, Little Italy, 1942">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
+                                    src="../img/Gallery/grid/street/‘Time Is Short’ in Broome Street, Little Italy, 1942.jpeg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
+                            <a href="../img/Gallery/grid/street/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
                                 data-lightbox="grid" data-title="Act of Love at the Astor Theatre, Times Square, 1954">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
+                                    src="../img/Gallery/grid/street/Act of Love at the Astor Theatre, Times Square, 1954.jpeg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -425,30 +482,30 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Lottery ticket, New York.jpg" data-lightbox="grid"
+                            <a href="../img/Gallery/grid/street/Lottery ticket, New York.jpg" data-lightbox="grid"
                                 data-title="Lottery ticket, New York">
-                                <img class="card-img-top" src="../img/Gallery/grid/Lottery ticket, New York.jpg"
+                                <img class="card-img-top" src="../img/Gallery/grid/street/Lottery ticket, New York.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
+                            <a href="../img/Gallery/grid/street/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
                                 data-lightbox="grid" data-title="Boy wearing a 'Space Patrol' astronaut mask, New York">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
+                                    src="../img/Gallery/grid/street/Boy wearing a 'Space Patrol' astronaut mask, New York.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
+                            <a href="../img/Gallery/grid/street/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
                                 data-lightbox="grid"
                                 data-title="Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
+                                    src="../img/Gallery/grid/street/Arrests made during a gambling raid in lower Manhattan’s Liberty Street, October 1942.jpeg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -458,39 +515,40 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
+                            <a href="../img/Gallery/grid/street/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
                                 data-lightbox="grid"
                                 data-title="Firefighters carrying musician and her violin to safety after fire, New York, January 28, 19435">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
+                                    src="../img/Gallery/grid/street/Firefighters carrying musician and her violin to safety after fire, New York, January 28, 1943.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Under the Third Avenue Elevated, 1938.jpeg"
+                            <a href="../img/Gallery/grid/street/Under the Third Avenue Elevated, 1938.jpeg"
                                 data-lightbox="grid" data-title="Under the Third Avenue Elevated, 1938">
                                 <img class="card-img-top"
-                                    src="../img/Gallery/grid/Under the Third Avenue Elevated, 1938.jpeg"
+                                    src="../img/Gallery/grid/street/Under the Third Avenue Elevated, 1938.jpeg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Shooting in Front of My Studio.jpg" data-lightbox="grid"
+                            <a href="../img/Gallery/grid/street/Shooting in Front of My Studio.jpg" data-lightbox="grid"
                                 data-title="Shooting in Front of My Studio">
-                                <img class="card-img-top" src="../img/Gallery/grid/Shooting in Front of My Studio.jpg"
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/street/Shooting in Front of My Studio.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <a href="../img/Gallery/grid/Their First Murder(1941).jpg" data-lightbox="grid"
+                            <a href="../img/Gallery/grid/street/Their First Murder(1941).jpg" data-lightbox="grid"
                                 data-title="Il loro primo omicidio, 1941">
-                                <img class="card-img-top" src="../img/Gallery/grid/Their First Murder(1941).jpg"
+                                <img class="card-img-top" src="../img/Gallery/grid/street/Their First Murder(1941).jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
@@ -499,6 +557,260 @@
                 </div>
             </div>
 
+
+            <div class="container__header--theme-two">
+                <h2>Photojournalism</h2>
+            </div>
+
+            <!-- Primo container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Murder, c1940.jpg" data-lightbox="grid"
+                                data-title="Murder, 1940">
+                                <img class="card-img-top" src="../img/Gallery/grid/post-mortem/Murder, c1940.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/April 16, 1942-crash victim.jpg"
+                                data-lightbox="grid"
+                                data-title="Police and bystanders with body of Stanley Sandler, a passenger in an automobile that crashed into a Third Avenue El pillar and caught fire, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/April 16, 1942-crash victim.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Police and onlookers with body of Joseph (Little Joe) La Cava, killed during the Feast of San Gennaro, 119 Mulberry Street, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Police and onlookers with body of Joseph (Little Joe) La Cava, killed during the Feast of San Gennaro, 119 Mulberry Street, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Police and onlookers with body of Joseph (Little Joe) La Cava, killed during the Feast of San Gennaro, 119 Mulberry Street, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/On the Spot.jpg" data-lightbox="grid"
+                                data-title="On the Spot">
+                                <img class="card-img-top" src="../img/Gallery/grid/post-mortem/On the Spot.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Murder on a New York Sidewalk.jpg"
+                                data-lightbox="grid" data-title="Murder on a New York Sidewalk">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Murder on a New York Sidewalk.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/'Fiesta' turns into tragedy, body of dead man, lies on street, Mulberry St., Little Italy.jpg"
+                                data-lightbox="grid"
+                                data-title="'Fiesta' turns into tragedy, body of dead man, lies on street, Mulberry St., Little Italy">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/'Fiesta' turns into tragedy, body of dead man, lies on street, Mulberry St., Little Italy.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Body of man shot after a game of bocci, New York.jpg"
+                                data-lightbox="grid" data-title="Body of man shot after a game of bocci, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Body of man shot after a game of bocci, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Secondo container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Hold-up man killed, 24 November 1941.jpg"
+                                data-lightbox="grid" data-title="Hold-up man killed, 24 November 1941">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Hold-up man killed, 24 November 1941.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Man  killed, 1942.jpg" data-lightbox="grid"
+                                data-title="Man killed, 1942">
+                                <img class="card-img-top" src="../img/Gallery/grid/post-mortem/Man  killed, 1942.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Auto accident victim, New York.jpg"
+                                data-lightbox="grid" data-title="Auto accident victim, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Auto accident victim, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Anthony Esposito, booked on suspicion of killing a policeman, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Anthony Esposito, booked on suspicion of killing a policeman, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Anthony Esposito, booked on suspicion of killing a policeman, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Manuel Jiminez lies wounded in the lap of Manuelda Hernandez, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Manuel Jiminez lies wounded in the lap of Manuelda Hernandez, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Manuel Jiminez lies wounded in the lap of Manuelda Hernandez, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Weegee Examines A Body In A Trunk.jpg"
+                                data-lightbox="grid" data-title="Weegee Examines A Body In A Trunk">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Weegee Examines A Body In A Trunk.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Barber Salvatore Ossido taken to police station for murder of Einer Sporrer, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Barber Salvatore Ossido taken to police station for murder of Einer Sporrer, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Barber Salvatore Ossido taken to police station for murder of Einer Sporrer, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Terzo container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Hit by car.jpg" data-lightbox="grid"
+                                data-title="Hit by car">
+                                <img class="card-img-top" src="../img/Gallery/grid/post-mortem/Hit by car.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Police officer and lodge member looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Police officer and lodge member looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Police officer and lodge member looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Body of Dominick Didato, Elizabeth Street, 7 August 1936.jpg"
+                                data-lightbox="grid"
+                                data-title="Body of Dominick Didato, Elizabeth Street, 7 August 1936">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Body of Dominick Didato, Elizabeth Street, 7 August 1936.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Street Accident’, New York, 1941.png"
+                                data-lightbox="grid" data-title="Street Accident, New York, 1941">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Street Accident’, New York, 1941.png"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Girl jumped out of car, and was killed, on Park Ave, c1938.jpg"
+                                data-lightbox="grid"
+                                data-title="Girl jumped out of car, and was killed, on Park Ave, 1938">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Girl jumped out of car, and was killed, on Park Ave, c1938.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/'Ruth Snyder Murder' wax display, Eden Muse, Coney Island, c1941.jpg"
+                                data-lightbox="grid"
+                                data-title="'Ruth Snyder Murder' wax display, Eden Muse, Coney Island, 1941">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/'Ruth Snyder Murder' wax display, Eden Muse, Coney Island, c1941.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="../img/Gallery/grid/post-mortem/Bystanders looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York.jpg"
+                                data-lightbox="grid"
+                                data-title="Bystanders looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York">
+                                <img class="card-img-top"
+                                    src="../img/Gallery/grid/post-mortem/Bystanders looking at blanket-covered body of woman trampled to death in excursion-boat stampede, New York.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -520,7 +832,17 @@
             'wrapAround': true,
             'showImageNumberLabel': false,
             'disableScrolling': true,
-        })
+        });
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 200) {
+                $('.gotopbtn').fadeIn();
+            } else {
+                $('.gotopbtn').fadeOut();
+            }
+        });
+
     </script>
 
 </body>

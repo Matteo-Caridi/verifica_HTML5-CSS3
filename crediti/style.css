@@ -23,16 +23,17 @@ body p {
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .col {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .col-md {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
+    border: 1px solid rgb(226, 226, 226);
 }
 
 html {
@@ -55,7 +56,7 @@ html {
 
 .author__img img {
     width: 250px;
-    height: 285px;
+    height: 300px;
 }
 
 .author__title {
@@ -74,6 +75,11 @@ html {
     padding: 2rem;
 }
 
+.structure__img img {
+    width: 350px;
+    height: 350px;
+}
+
 /* CSS stile */
 
 .stylistic__title {
@@ -85,12 +91,19 @@ html {
     padding: 2rem;
 }
 
-/* CSS stile */
+.stylistic__img img {
+    width: 350px;
+    height: 350px;
+}
 
+/* CSS conclusioni */
+.conclusions__info {
+    padding: 2rem;
+}
 .conclusions__title {
     font-style: italic;
-    padding: 2.5rem;
     text-align: center;
+    padding-bottom: 4rem;
 }
 
 .conclusions__title:after {
@@ -102,27 +115,12 @@ html {
     padding-top: 0.5rem;
 }
 
-/* IMMAGINE VIEWPORT */
-
-.header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    padding: 0;
-}
-
-.header img {
-    width: 100%;
-}
-
 /* CONTAINER CREDITS */
 
 .container__header {
     font-style: italic;
     height: 20rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +141,25 @@ html {
     padding-bottom: 7rem;
 }
 
+
+
 .container .col-md {
     padding: 4rem;
+}
+
+/* IMMAGINE VIEWPORT */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+}
+
+.header img {
+    width: 100%;
 }
 
 /* Bottone per tornare su */
@@ -160,11 +175,52 @@ html {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: #ecf0f1;
+    color: white;
     font-size: 22px;
     border-radius: 50%;
 }
 
 .gotopbtn:hover {
     color: #bdc3c7;
+}
+
+/* Media Query */
+
+@media (max-width: 576px) {
+    .structure__img img {
+        display: none;
+    }
+    .stylistic__img img {
+        display: none;
+    }
+    .container__header {
+        height: 15rem;
+    }
+
+    .gotopbtn{
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 100%;
+        background: black;
+        color: white;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1040px) {
+    .carousel-item {
+        height: 100%;
+        background: black;
+        color: white;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
 }

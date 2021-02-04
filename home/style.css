@@ -10,10 +10,7 @@ body {
 }
 
 .header__info {
-    padding: 1.875rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 1.875rem;    
 }
 
 .header__info .header__info--quote {

@@ -1,19 +1,23 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Playfair Display', serif;
 }
 
-body blockquote{
+.container__header h1{
+    font-size: 3.5rem;
+}
+
+body blockquote {
     text-align: center;
-    font-style:italic;
+    font-style: italic;
     padding: 2rem 0;
 }
 
 .container__bio {
     font-family: 'Bodoni Moda', serif;
-
 }
 
 .col-md {
@@ -21,8 +25,8 @@ body blockquote{
     text-align: justify;
 }
 
-
 /* Scrollbar Hidden*/
+
 ::-webkit-scrollbar {
     width: 100%;
     height: 100%;
@@ -30,7 +34,6 @@ body blockquote{
 }
 
 /* Bottone per tornare su */
-
 
 .gotopbtn {
     display: none;
@@ -48,13 +51,13 @@ body blockquote{
     border-radius: 50%;
 }
 
-
-
 .gotopbtn:hover {
     color: #bdc3c7;
 }
 
 /* Fine bottone */
+
+/* Foto + title */
 
 .container__header {
     height: 20rem;
@@ -62,15 +65,6 @@ body blockquote{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container__header h1:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid rgb(140, 140, 140);
-    width: 3rem;
-    margin: auto;
-    padding-top: 0.5rem;
 }
 
 .header__info {
@@ -83,11 +77,17 @@ body blockquote{
     line-height: 3rem;
 }
 
-.header__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container__header h1:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    width: 3rem;
+    margin: auto;
+    padding-top: 0.5rem;
 }
+/* Fine */
+
+/* Prima lettera Maiuscola */
 
 .has-dropcap {
     padding: 0 2.5rem;
@@ -104,8 +104,6 @@ body blockquote{
     max-width: 100%;
 }
 
-
-
 /* INIZIO Position Indicator */
 
 progress {
@@ -113,22 +111,17 @@ progress {
     position: fixed;
     left: 0;
     top: 0;
-
     /* Dimensions */
     width: 100%;
     height: 5px;
-
     /* Reset the appearance */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
     /* Get rid of the default border in Firefox/Opera. */
     border: none;
-
     /* Progress bar container for Firefox/IE10+ */
     background-color: transparent;
-
     /* Progress bar value for IE10+ */
     color: #bdc3c7;
 }

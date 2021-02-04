@@ -6,9 +6,103 @@
     overflow: hidden;
 }
 
+/* Font e stile sito */
+
 body {
     font-family: 'Playfair Display', serif;
+    background-color: #EDEEF1;
 }
+
+body h1 {
+    font-size: 3.5rem;
+}
+
+body p {
+    font-family: 'Bodoni Moda', serif;
+    text-align: justify;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+.col {
+    border: 1px solid blue;
+}
+
+.col-md {
+    border: 1px solid black;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fine */
+
+/* CSS autore */
+
+.author__info {
+    padding: 2rem;
+}
+
+.author__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author__img img {
+    width: 250px;
+    height: 285px;
+}
+
+.author__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+/* CSS struttura */
+
+.structure__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.structure__info {
+    padding: 2rem;
+}
+
+/* CSS stile */
+
+.stylistic__title {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.stylistic__info {
+    padding: 2rem;
+}
+
+/* CSS stile */
+
+.conclusions__title {
+    font-style: italic;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.conclusions__title:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    width: 4rem;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+
+/* IMMAGINE VIEWPORT */
 
 .header {
     position: relative;
@@ -21,4 +115,56 @@ body {
 
 .header img {
     width: 100%;
+}
+
+/* CONTAINER CREDITS */
+
+.container__header {
+    font-style: italic;
+    height: 20rem;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DECORAZIONE INTESTAZIONE CREDITS */
+
+.container__header h1:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    width: 3rem;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+
+.container .col-md {
+    padding-bottom: 7rem;
+}
+
+.container .col-md {
+    padding: 4rem;
+}
+
+/* Bottone per tornare su */
+
+.gotopbtn {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #dfe6e9;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ecf0f1;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.gotopbtn:hover {
+    color: #bdc3c7;
 }

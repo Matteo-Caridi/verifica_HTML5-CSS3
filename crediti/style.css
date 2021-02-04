@@ -213,11 +213,14 @@ html {
     .stylistic__img img {
         display: none;
     }
+
+    .conclusions__title{
+        text-align: center;
+    }
     .container__header {
         height: 15rem;
     }
     .gotopbtn {
         z-index: 1;
     }
-    /* Immagine viewport */
 }

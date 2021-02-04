@@ -11,6 +11,7 @@ body {
 }
 
 body blockquote {
+    font-size: 2rem;
     text-align: center;
     font-style: italic;
     padding: 2rem 0;

@@ -55,6 +55,7 @@ html {
 }
 
 .author__img img {
+    
     width: 250px;
     height: 300px;
 }
@@ -76,8 +77,9 @@ html {
 }
 
 .structure__img img {
-    width: 350px;
-    height: 350px;
+    padding: 1rem 2rem;
+    width: 450px;
+    height: 400px;
 }
 
 /* CSS stile */
@@ -89,11 +91,13 @@ html {
 
 .stylistic__info {
     padding: 2rem;
+    text-align: justify;
 }
 
 .stylistic__img img {
-    width: 350px;
-    height: 350px;
+    padding-left:2rem;
+    width: 300px;
+    height: 300px;
 }
 
 /* CSS conclusioni */

@@ -97,9 +97,11 @@ html {
 }
 
 /* CSS conclusioni */
+
 .conclusions__info {
     padding: 2rem;
 }
+
 .conclusions__title {
     font-style: italic;
     text-align: center;
@@ -139,11 +141,6 @@ html {
 
 .container .col-md {
     padding-bottom: 7rem;
-}
-
-
-
-.container .col-md {
     padding: 4rem;
 }
 
@@ -175,7 +172,7 @@ html {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: white;
+    color: #ecf0f1;
     font-size: 22px;
     border-radius: 50%;
 }
@@ -196,31 +193,12 @@ html {
     .container__header {
         height: 15rem;
     }
-
-    .gotopbtn{
+    .gotopbtn {
         z-index: 1;
     }
-
-}
-
-@media (max-width: 768px) {
-    .carousel-item {
-        height: 100%;
-        background: black;
-        color: white;
-        position: relative;
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-@media (max-width: 1040px) {
-    .carousel-item {
-        height: 100%;
-        background: black;
-        color: white;
-        position: relative;
-        background-position: center;
-        background-size: cover;
+    /* Immagine viewport */
+ 
+    .header img {
+        height: 300px;
     }
 }

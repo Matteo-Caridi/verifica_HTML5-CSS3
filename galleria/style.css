@@ -54,7 +54,7 @@ body h2 {
 
 /* CAROUSEL */
 .carousel-item {
-    height: 41.5rem;
+    height: 41.75rem;
     background: #000;
     color: white;
     position: relative;
@@ -62,24 +62,12 @@ body h2 {
     background-size: cover;
 }
 
-
-.overlay-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-}
-
 .carousel-inner img {
     width: 100%;
 }
 
 @media (max-width: 576px) {
-    .carousel-item .active {
+    .carousel-item {
         height: 100%;
         background: black;
         color: white;

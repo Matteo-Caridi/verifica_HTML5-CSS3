@@ -8,6 +8,6 @@
 - [x] **task3.1 inserimento menù**
 - [x] **task3.2 inserimento carousel**
 - [x] **task3.3 inserimento grid per card**
+- [x] **task4 Creazione pagina Biografia**
 
-- [ ] **task4 Creazione pagina Biografia**
 - [ ] **task5 Creazione pagina Credits**

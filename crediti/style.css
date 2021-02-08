@@ -190,34 +190,42 @@ html {
     .container .col-md {
         padding: 0;
     }
+    .author__img {
+        display: none;
+    }
     .author__title {
-        padding-top:3rem;
+        padding-top: 3rem;
         text-align: center;
     }
     .author__info {
-        padding: 0 0 2.5 0;
+        padding: 2rem 5rem;
     }
     .structure__title {
         text-align: center;
-        padding-top: 2rem;
+        padding: 2rem 2rem;
     }
     .structure__info {
-        padding: 0 0 2.5 0;
+        padding: 2rem 5rem;
     }
     .structure__img img {
         display: none;
     }
     .stylistic__title {
         text-align: center;
-        padding: 3rem 0 3rem 0;
+        padding: 2rem 4rem;
     }
     .stylistic__img img {
         display: none;
     }
-
-    .conclusions__title{
-        padding: 3rem 0 3rem 0;
+    .stylistic__info {
+        padding: 2rem 5rem;
+    }
+    .conclusions__title {
+        padding: 2rem 5rem;
         text-align: center;
+    }
+    .conclusions__info {
+        padding: 2rem 5rem;
     }
     .container__header {
         height: 15rem;

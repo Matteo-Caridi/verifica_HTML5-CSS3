@@ -149,4 +149,8 @@ progress::-moz-progress-bar {
     .header__info {
         padding-top: 5rem;
     }
+
+    .container__header h1{
+        font-size:3rem;
+    }
 }

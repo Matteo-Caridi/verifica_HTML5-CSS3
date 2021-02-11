@@ -95,8 +95,8 @@ html {
 
 .stylistic__img img {
     padding-left: 2rem;
-    width: 300px;
-    height: 300px;
+    width: 100vh;
+    height: 100vh;
 }
 
 /* CSS conclusioni */

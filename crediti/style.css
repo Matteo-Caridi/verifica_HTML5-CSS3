@@ -201,14 +201,14 @@ html {
         text-align: center;
     }
     .author__info {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
     }
     .structure__title {
         text-align: center;
         padding: 2rem 2rem;
     }
     .structure__info {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
     }
     .structure__img img {
         display: none;
@@ -221,14 +221,14 @@ html {
         display: none;
     }
     .stylistic__info {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
     }
     .conclusions__title {
         padding: 2rem 5rem;
         text-align: center;
     }
     .conclusions__info {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
     }
     .container__header {
         height: 15rem;

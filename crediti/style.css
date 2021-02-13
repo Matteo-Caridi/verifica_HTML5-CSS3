@@ -95,8 +95,8 @@ html {
 
 .stylistic__img img {
     padding-left: 2rem;
-    width: 100vh;
-    height: 100vh;
+    width: 70vh;
+    height: 60vh;
 }
 
 /* CSS conclusioni */
@@ -246,6 +246,9 @@ html {
         padding-top: 3rem;
         text-align: center;
     }
+    .author__info {
+        padding: 2rem 3rem;
+    }
     .author__img {
         display: none;
     }
@@ -253,12 +256,18 @@ html {
         text-align: center;
         padding: 2rem 4rem;
     }
+    .structure__info {
+        padding: 2rem 3rem;
+    }
     .structure__img img {
         display: none;
     }
     .stylistic__title {
         text-align: center;
         padding: 2rem 4rem;
+    }
+    .stylistic__info {
+        padding: 2rem 3rem;
     }
     .stylistic__img img {
         display: none;

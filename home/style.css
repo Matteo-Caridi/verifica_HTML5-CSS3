@@ -31,13 +31,15 @@ body {
         padding-top: 3rem;
         text-align: center;
     }
+    .header__img--artist {
+        max-width: 50%;
+    }
     .header__img {
-        padding: 3rem 0;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .header__info {
         padding-top: 3rem;
         text-align: center;
@@ -46,18 +48,7 @@ body {
         max-width: 50%;
     }
     .header__img {
-        padding: 3rem 0;
         text-align: center;
     }
 }
 
-@media (max-width: 1040px) {
-    .header__info {
-        padding-top: 3rem;
-        text-align: center;
-    }
-    .header__img {
-        padding: 3rem 0;
-        text-align: center;
-    }
-}

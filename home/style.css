@@ -22,15 +22,20 @@ body {
     max-width: 100%;
 }
 
+.header__info--name{
+    font-family: 'Bodoni Moda', serif;
+}
+
 @media (max-width: 576px) {
     .header__info {
-        padding-top: 2rem;
+        padding-top: 3rem;
         text-align: center;
     }
     .header__img--artist {
         max-width: 50%;
     }
     .header__img {
+        padding: 3rem 0;
         text-align: center;
     }
 }
@@ -38,13 +43,15 @@ body {
 @media (max-width: 768px) {
     .header__info {
         
-        padding-top: 2rem;
+        padding-top: 3rem;
         text-align: center;
     }
     .header__img--artist {
         max-width: 50%;
     }
     .header__img {
+        padding-top: 3rem;
+
         text-align: center;
     }
 }
